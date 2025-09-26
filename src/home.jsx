@@ -1,9 +1,11 @@
 import Header from "./header";
+import Content from "./content";
 
 function Home() {
   return (
     <>
-      <Header currentPage="Home" />{" "}
+      <Header currentPage="Home" />
+      <Content />
     </>
   );
 }
