@@ -8,14 +8,14 @@
     url(https://themewagon.github.io/Edukate/img/header.jpg),
     no-repeat center center;
   background-size: cover;
-  padding: 4rem 2rem;
+  padding: 2rem;
   background-blend-mode: multiply;
 }
 
 .overlay-bottom img {
   max-width: 100%;
   height: auto;
-  margin-top: -40px;
+  margin-top: -10px;
   display: block;
 }
 .searchbox {
@@ -55,7 +55,6 @@ input {
 }
 
 .about-us {
-  margin-left: 4.5rem;
   background-color: white;
   gap: 25px;
 }

@@ -17,15 +17,16 @@ function Content() {
           </span>
         </div>
       </div>
-      <div className="overlay-bottom">
+      <div className="overlay-bottom ">
         <img
+          className="w-50 h-50"
           src="https://themewagon.github.io/Edukate/img/overlay-bottom.png"
           alt=""
         />
       </div>
       <br />
 
-      <div className="sub-content container-fluid about-us pl-md-5 ml-5 pr-md-5 d-flex align-items-center flex-row">
+      <div className="sub-content container-fluid about-us pl-md-5 pr-md-5 d-flex align-items-center flex-row">
         <div>
           <img
             src="https://themewagon.github.io/Edukate/img/about.jpg"
