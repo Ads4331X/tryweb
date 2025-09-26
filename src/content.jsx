@@ -19,7 +19,7 @@ function Content() {
       </div>
       <div className="overlay-bottom ">
         <img
-          className="w-50 h-50"
+          className="w-100 h-100 "
           src="https://themewagon.github.io/Edukate/img/overlay-bottom.png"
           alt=""
         />
