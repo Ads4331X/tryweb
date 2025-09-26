@@ -1,0 +1,46 @@
+.container-fluid {
+  background-color: whitesmoke;
+}
+
+.header {
+  flex-shrink: 1;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-text {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .header {
+    display: flex;
+    justify-content: space-between !important;
+    padding: 20px !important;
+  }
+  .joinus {
+    display: none !important;
+  }
+  .hamburger {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .line {
+    flex-direction: column !important;
+    padding: 15px;
+  }
+
+  .items {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  .dropdown-menu.show {
+    margin-top: -70px !important;
+    margin-left: 10px !important;
+  }
+}
