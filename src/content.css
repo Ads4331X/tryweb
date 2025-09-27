@@ -15,12 +15,6 @@
   /* background-blend-mode: multiply; */
 }
 
-@media screen and (max-width: 600px) {
-  .main-content {
-    padding: 2rem;
-  }
-}
-
 .main-content::after {
   content: "";
   background-image: url(https://themewagon.github.io/Edukate/img/overlay-bottom.png);
@@ -39,7 +33,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
   flex-shrink: 2;
   gap: 0px;
   margin-top: 20px;
@@ -49,7 +42,6 @@
 
 .searchbox button,
 .searchbox .select {
-  border-left: none;
   color: white;
   cursor: pointer;
   width: 150px;
@@ -60,7 +52,6 @@
 }
 
 input {
-  width: auto;
   flex-grow: 1;
 }
 .searchbox input,
@@ -87,30 +78,37 @@ input {
   color: gray;
 }
 
-@media screen and (max-width: 298px) {
+@media screen and (max-width: 380px) {
   .searchbox {
     flex-direction: column !important;
-    padding-bottom: 20px;
-    padding-top: 20px;
     gap: 20px;
-    min-width: none;
+    padding-bottom: 4rem;
+    border: none;
+  }
+  .main-content {
+    padding: 2rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (min-width: 381px) {
+  .main-content {
+    padding: 2rem;
+  }
+
   .searchbox {
-    flex-direction: column !important;
-    padding-bottom: 20px;
+    flex-direction: row !important;
+    padding-bottom: 8rem;
     padding-top: 20px;
-    gap: 20px;
     border: none;
   }
 
   .dropdown {
     background-color: lightgray !important;
   }
+
   input {
-    /* width: 95% !important; */
+    width: 100% !important; /* makes input fill container */
     border: 1px solid rgb(41, 40, 40) !important;
+    box-sizing: border-box;
   }
 }
