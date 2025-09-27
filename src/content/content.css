@@ -11,11 +11,8 @@
   background-size: 100% 100% !important;
   background-repeat: no-repeat !important;
   padding: 10rem;
-
   position: relative;
-
   margin-bottom: 4rem;
-
   /* background-blend-mode: multiply; */
 }
 
@@ -80,9 +77,6 @@ input {
   font-size: 20px;
   line-height: 1.8;
   color: gray;
-}
-
-.course-menu {
 }
 
 @media screen and (max-width: 380px) {
