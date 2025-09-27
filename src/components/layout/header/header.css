@@ -15,6 +15,11 @@
   color: black;
 }
 
+.page-menu {
+  margin-top: 23px !important;
+  border-radius: 0px !important;
+  margin-left: -20px !important;
+}
 
 @media only screen and (max-width: 767.98px) {
   .header {
@@ -40,7 +45,7 @@
     flex-direction: row !important;
   }
 
-  .dropdown-menu.show {
+  .page-menu {
     margin-top: -70px !important;
     margin-left: 10px !important;
   }

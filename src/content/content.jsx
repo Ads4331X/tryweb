@@ -39,7 +39,7 @@ function CourseDropdown() {
         Courses
       </a>
 
-      <div className="dropdown-menu course-menu">
+      <span className="dropdown-menu course-menu">
         {courses.map((course, index) => {
           return (
             <a className="dropdown-item" href="#" key={index}>
@@ -47,7 +47,7 @@ function CourseDropdown() {
             </a>
           );
         })}
-      </div>
+      </span>
     </div>
   );
 }
