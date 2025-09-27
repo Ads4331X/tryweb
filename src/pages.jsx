@@ -23,7 +23,7 @@ function Pages(props) {
       >
         Pages
       </a>
-      <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <div className="dropdown-menu " aria-labelledby="dropdownMenuLink">
         {dropdown_info.map((info, key) => (
           <a className="dropdown-item" href="#" key={key}>
             {info}
