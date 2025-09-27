@@ -8,16 +8,31 @@
     url(https://themewagon.github.io/Edukate/img/header.jpg),
     no-repeat center center;
   background-size: cover;
-  padding: 2rem;
-  background-blend-mode: multiply;
+  position: relative;
+  margin-bottom: 4rem;
+  padding: 10rem;
+
+  /* background-blend-mode: multiply; */
 }
 
-.overlay-bottom img {
-  max-width: 100%;
-  height: auto;
-  margin-top: -48px;
-  display: block;
+@media screen and (max-width: 600px) {
+  .main-content {
+    padding: 2rem;
+  }
 }
+
+.main-content::after {
+  content: "";
+  background-image: url(https://themewagon.github.io/Edukate/img/overlay-bottom.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -0.6px;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
 .searchbox {
   width: 100%;
   max-width: 600px;
@@ -25,6 +40,8 @@
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  flex-shrink: 2;
+  gap: 0px;
   margin-top: 20px;
   border: 1px solid lightgray;
   text-align: center;
@@ -70,19 +87,30 @@ input {
   color: gray;
 }
 
+@media screen and (max-width: 298px) {
+  .searchbox {
+    flex-direction: column !important;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    gap: 20px;
+    min-width: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .searchbox {
     flex-direction: column !important;
     padding-bottom: 20px;
     padding-top: 20px;
     gap: 20px;
+    border: none;
   }
 
   .dropdown {
     background-color: lightgray !important;
   }
   input {
-    width: 95% !important;
+    /* width: 95% !important; */
     border: 1px solid rgb(41, 40, 40) !important;
   }
 }

@@ -4,12 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Content() {
   return (
     <div>
-      <div className="main-content  ">
+      <div className="main-content   ">
         <div className="text-center content p-5 mb-4 text-light">
           <p className="fw-bold fs-2">Learn From Home</p>
           <h2 className="fw-bold display-1">Education Courses</h2>
         </div>
-        <div className="d-flex justify-content-center align-items-center  ">
+        <div className="d-flex justify-content-center align-items-center search-section">
           <span className="searchbox mx-auto mb-5">
             <CourseDropdown className="select" />
             <input type="text" placeholder="Keyword" className="search-input" />
@@ -17,16 +17,10 @@ function Content() {
           </span>
         </div>
       </div>
-      <div className="overlay-bottom ">
-        <img
-          className="w-100 h-100 "
-          src="https://themewagon.github.io/Edukate/img/overlay-bottom.png"
-          alt=""
-        />
-      </div>
+
       <br />
 
-      <div className="sub-content container-fluid about-us pl-md-5 pr-md-5 d-flex align-items-center flex-row">
+      <div className="sub-content container-fluid about-us p-3 d-flex align-items-center flex-column flex-md-row">
         <div>
           <img
             src="https://themewagon.github.io/Edukate/img/about.jpg"

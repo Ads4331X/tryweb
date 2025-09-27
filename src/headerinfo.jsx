@@ -2,6 +2,7 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import Pages from "./pages";
+import { IoIosHome } from "react-icons/io";
 
 function Headerinfo(props) {
   let [hovered, setHovered] = useState(null);
