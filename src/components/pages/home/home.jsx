@@ -1,5 +1,5 @@
-import Header from "./header";
-import Content from "./content";
+import Header from "../../layout/header/header";
+import Content from "../../../content/content";
 
 function Home() {
   return (

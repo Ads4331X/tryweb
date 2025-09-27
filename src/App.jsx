@@ -1,8 +1,9 @@
-import Home from "./home";
-import Courses from "./courses";
-import About from "./about";
-import Contact from "./contact";
+import Home from "./components/pages/home/home.jsx";
+import Courses from "./components/pages/courses/courses.jsx";
+import About from "./components/pages/about/about.jsx";
+import Contact from "./components/pages/contact/contact.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { Home, Courses, About, Contact } from "./components/pages";
 
 function App() {
   return (

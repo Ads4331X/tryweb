@@ -13,7 +13,7 @@ function Content() {
           <span className="searchbox mx-auto mb-5">
             <CourseDropdown className="select" />
             <input type="text" placeholder="Keyword" className="search-input" />
-            <button className="btn btn-danger ">Search</button>
+            <button className="btn btn-danger border-danger ">Search</button>
           </span>
         </div>
       </div>
@@ -49,7 +49,7 @@ function CourseDropdown() {
         Courses
       </a>
 
-      <div className="dropdown-menu">
+      <div className="dropdown-menu course-menu">
         {courses.map((course, index) => {
           return (
             <a className="dropdown-item" href="#" key={index}>

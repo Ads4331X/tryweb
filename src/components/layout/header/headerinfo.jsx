@@ -1,20 +1,25 @@
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import Pages from "./pages";
-import { IoIosHome } from "react-icons/io";
+import PagesDropdown from "../../common/PagesDropdown";
 
 function Headerinfo(props) {
   let [hovered, setHovered] = useState(null);
   let items = [];
   if (props.dropend) {
-    items = ["Home", "Courses", "About", <Pages dropend={true} />, "Contact"];
+    items = [
+      "Home",
+      "Courses",
+      "About",
+      <PagesDropdown dropend={true} />,
+      "Contact",
+    ];
   } else {
-    items = ["Home", "Courses", "About", <Pages />, "Contact"];
+    items = ["Home", "About", "Courses", <PagesDropdown />, "Contact"];
   }
 
   return (
-    <div className="line d-flex gap-4 m-4 align-items-center">
+    <div className="line d-flex gap-4 align-items-center">
       {items.map((item, index) => (
         <div
           className="items"

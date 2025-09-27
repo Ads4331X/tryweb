@@ -1,9 +1,10 @@
 import { IoSchool } from "react-icons/io5";
-import "./header.css";
+import { RxHamburgerMenu } from "react-icons/rx";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { RxHamburgerMenu } from "react-icons/rx";
 import Headerinfo from "./headerinfo";
+
+import "./header.css";
 
 function Header(props) {
   return (
