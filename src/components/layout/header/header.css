@@ -16,9 +16,9 @@
 }
 
 .page-menu {
-  margin-top: 23px;
-  border-radius: 0px;
-  margin-left: -20px;
+  margin-top: 23px !important;
+  border-radius: 0px !important;
+  margin-left: -20px !important;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -46,7 +46,7 @@
   }
 
   .page-menu {
-    margin-top: -70px;
-    margin-left: 10px;
+    margin-top: -70px !important;
+    margin-left: 10px !important;
   }
 }
