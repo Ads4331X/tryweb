@@ -54,5 +54,6 @@
 @media screen and (max-width: 992px) {
   .icon-container {
     margin: 20px 0 0 20px;
+    padding-bottom: 3rem;
   }
 }

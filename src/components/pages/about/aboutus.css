@@ -17,9 +17,9 @@ img {
 }
 
 h6 {
-  color: hsl(22, 100%, 50%);
+  color: hwb(9 0% 0%) !important;
   padding-left: 10.5px;
-  text-decoration: 1px dashed orange underline;
+  text-decoration: 1px dashed hwb(9 0% 0%) underline;
   text-underline-offset: 9px;
 }
 
