@@ -14,3 +14,16 @@ h6 {
 .counter-box {
   text-align: center !important;
 }
+
+@media screen and (max-width: 552px) {
+  .counter h5 {
+    text-align: center !important;
+  }
+  .counter h5:last-child {
+    font-size: 0.9rem !important;
+  }
+
+  .count {
+    font-size: 1.4rem !important;
+  }
+}

@@ -1,0 +1,58 @@
+.whychooseus-container {
+  background: linear-gradient(
+      rgba(40, 120, 235, 0.05),
+      rgba(40, 120, 235, 0.05)
+    ),
+    url(https://themewagon.github.io/Edukate/img/bg-image.jpg) !important;
+  background-attachment: fixed !important;
+  background-size: 100% 50% !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin-top: 11.5rem !important;
+}
+
+.whychooseus-content {
+  padding-top: 5rem !important;
+}
+
+.why-info {
+  padding-top: 1rem !important;
+}
+
+.graduate {
+  color: white !important;
+  padding: 10px !important;
+  width: 80px !important;
+  height: 80px !important;
+  margin-top: 5px !important;
+}
+
+.why-para {
+  font-size: 16px !important;
+}
+
+.whychooseus-image,
+.whychooseus-image img {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+@media screen and (max-width: 544px) {
+  .icon-container h4 {
+    font-size: 1rem;
+    padding-left: 1.25rem !important;
+  }
+  .icon-container p {
+    padding-left: 1.25rem !important;
+  }
+  .graduate {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .icon-container {
+    margin: 20px 0 0 20px !important;
+  }
+}

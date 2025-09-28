@@ -1,5 +1,5 @@
 import "./content.css";
-import Aboutus from "../components/subcontent/aboutus";
+import Aboutus from "../components/pages/about/aboutus";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
