@@ -3,56 +3,56 @@
       rgba(40, 120, 235, 0.05),
       rgba(40, 120, 235, 0.05)
     ),
-    url(https://themewagon.github.io/Edukate/img/bg-image.jpg) !important;
-  background-attachment: fixed !important;
-  background-size: 100% 50% !important;
-  width: 100% !important;
-  height: 100% !important;
-  margin-top: 11.5rem !important;
+    url(https://themewagon.github.io/Edukate/img/bg-image.jpg);
+  background-attachment: fixed;
+  background-size: 100% 50%;
+  width: 100%;
+  height: 100%;
+  margin-top: 11.5rem;
 }
 
 .whychooseus-content {
-  padding-top: 5rem !important;
+  padding-top: 5rem;
 }
 
 .why-info {
-  padding-top: 1rem !important;
+  padding-top: 1rem;
 }
 
 .graduate {
-  color: white !important;
-  padding: 10px !important;
-  width: 80px !important;
-  height: 80px !important;
-  margin-top: 5px !important;
+  color: white;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  margin-top: 5px;
 }
 
 .why-para {
-  font-size: 16px !important;
+  font-size: 16px;
 }
 
 .whychooseus-image,
 .whychooseus-image img {
-  height: 100% !important;
-  width: 100% !important;
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 544px) {
   .icon-container h4 {
     font-size: 1rem;
-    padding-left: 1.25rem !important;
+    padding-left: 1.25rem;
   }
   .icon-container p {
-    padding-left: 1.25rem !important;
+    padding-left: 1.25rem;
   }
   .graduate {
-    width: 70px !important;
-    height: 70px !important;
+    width: 70px;
+    height: 70px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .icon-container {
-    margin: 20px 0 0 20px !important;
+    margin: 20px 0 0 20px;
   }
 }

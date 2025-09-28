@@ -1,6 +1,5 @@
 import { IoSchool } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 import Headerinfo from "./headerinfo";
 

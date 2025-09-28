@@ -16,19 +16,19 @@
 }
 
 .page-menu {
-  margin-top: 23px !important;
-  border-radius: 0px !important;
-  margin-left: -20px !important;
+  margin-top: 23px;
+  border-radius: 0px;
+  margin-left: -20px;
 }
 
 @media only screen and (max-width: 767.98px) {
   .header {
     display: flex;
-    justify-content: space-between !important;
-    padding: 20px !important;
+    justify-content: space-between;
+    padding: 20px;
   }
   .joinus {
-    display: none !important;
+    display: none;
   }
   .hamburger {
     font-size: 30px;
@@ -36,17 +36,17 @@
   }
 
   .line {
-    flex-direction: column !important;
+    flex-direction: column;
     padding: 15px;
   }
 
   .items {
-    display: flex !important;
-    flex-direction: row !important;
+    display: flex;
+    flex-direction: row;
   }
 
   .page-menu {
-    margin-top: -70px !important;
-    margin-left: 10px !important;
+    margin-top: -70px;
+    margin-left: 10px;
   }
 }

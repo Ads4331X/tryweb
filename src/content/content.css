@@ -7,9 +7,9 @@
   background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)),
     url(https://themewagon.github.io/Edukate/img/header.jpg),
     no-repeat center center;
-  height: auto !important;
-  background-size: 100% 100% !important;
-  background-repeat: no-repeat !important;
+  height: auto;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   padding: 10rem;
   position: relative;
   margin-bottom: 4rem;
@@ -50,21 +50,21 @@
 }
 .course-dropdown {
   padding: 20.6px;
-  background-color: white !important;
+  background-color: white;
 }
 
 @media only screen and (max-width: 767.98px) {
   .course-menu {
-    margin-left: -21px !important;
-    margin-top: 20px !important;
+    margin-left: -21px;
+    margin-top: 20px;
   }
 }
 
 .course-menu {
-  border-radius: 0px !important;
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
-  margin-left: -21px !important;
+  border-radius: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -21px;
 }
 
 input {
@@ -96,7 +96,7 @@ input {
 
 @media screen and (max-width: 380px) {
   .searchbox {
-    flex-direction: column !important;
+    flex-direction: column;
     gap: 20px;
     padding-bottom: 4rem;
     border: none;
@@ -112,15 +112,15 @@ input {
   }
 
   .searchbox {
-    flex-direction: row !important;
+    flex-direction: row;
     padding-bottom: 8rem;
     padding-top: 20px;
     border: none;
   }
 
   input {
-    width: 100% !important;
-    border: 1px solid rgb(41, 40, 40) !important;
+    width: 100%;
+    border: 1px solid rgb(41, 40, 40);
     box-sizing: border-box;
   }
 }
