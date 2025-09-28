@@ -1,0 +1,16 @@
+span {
+  font-size: 1.5rem;
+  font-weight: lighter !important;
+}
+
+h6 {
+  font-weight: lighter !important;
+}
+
+.count {
+  font-size: 2.2rem !important;
+}
+
+.counter-box {
+  text-align: center !important;
+}

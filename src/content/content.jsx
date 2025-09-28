@@ -1,11 +1,15 @@
 import "./content.css";
 import Aboutus from "../components/subcontent/aboutus";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 
 function Content() {
   return (
     <div>
-      <div className="main-content   ">
+      <div className="main-content ">
         <div className="text-center content p-5 mb-4 text-light">
           <p className="fw-bold fs-2">Learn From Home</p>
           <h2 className="fw-bold display-1">Education Courses</h2>
@@ -14,7 +18,13 @@ function Content() {
           <span className="searchbox mx-auto mb-5">
             <CourseDropdown className="select" />
             <input type="text" placeholder="Keyword" className="search-input" />
-            <button className="btn btn-danger border-danger ">Search</button>
+            <Button variant="danger" className="border-danger">
+              Search
+            </Button>
+
+            {/* <button className="btn btn-danger border-danger ">
+                    Search
+                  </button> */}
           </span>
         </div>
       </div>
