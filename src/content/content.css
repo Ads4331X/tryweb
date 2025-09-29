@@ -38,6 +38,7 @@ Button {
 
 .input {
   border: 0px;
+  border-radius: 0px !important;
 }
 
 .course-dropdown {
