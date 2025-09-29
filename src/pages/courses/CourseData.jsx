@@ -43,7 +43,9 @@ const CourseData = [
   },
 ];
 
-export const courseDataWithIds = CourseData.map((course, index) => ({
+const courseDataWithIds = CourseData.map((course, index) => ({
   id: `course-${index + 1}`,
   ...course,
 }));
+
+export default courseDataWithIds;
