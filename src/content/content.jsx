@@ -30,7 +30,7 @@ function Content() {
             <Col xs={7} sm={7} md={7} lg={7} xl={7} className="p-0 m-0 ">
               <input
                 type="text"
-                placeholder="Keyword"
+                placeholder=" &nbsp; &nbsp;Keyword"
                 className="search-input w-100 h-100 border-1"
               />
             </Col>
