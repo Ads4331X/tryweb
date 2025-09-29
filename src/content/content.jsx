@@ -1,5 +1,5 @@
 import "./content.css";
-import Aboutus from "../components/pages/about/aboutus";
+import Aboutus from "../pages/about/aboutus";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Button from "react-bootstrap/Button";

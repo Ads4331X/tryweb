@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
+
 function PagesDropdown(props) {
-  let dropdown_info = [
-    "Course Detail",
-    "Our Features",
-    "Instructors",
-    "Testimonials",
+  const dropdown_info = [
+    { name: "Course Detail", path: "/course-detail" },
+    { name: "Our Features", path: "/features" },
+    { name: "Instructors", path: "/instructors" },
+    { name: "Testimonials", path: "/testimonials" },
   ];
+
   return (
     <div className={`dropdown ${props.dropend ? "dropend" : ""}`}>
       <a
@@ -28,9 +31,9 @@ function PagesDropdown(props) {
         aria-labelledby="dropdownMenuLink"
       >
         {dropdown_info.map((info, key) => (
-          <a className="dropdown-item" href="#" key={key}>
-            {info}
-          </a>
+          <Link to={info.path} className="dropdown-item" key={key}>
+            {info.name}
+          </Link>
         ))}
       </div>
     </div>

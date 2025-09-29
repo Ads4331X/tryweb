@@ -2,8 +2,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./aboutus.css";
-import AutoCounter from "../../subcontent/autocounter";
-import Whychooseus from "../../pages/about/whychooseus";
+import AutoCounter from "../../components/subcontent/autocounter";
+import Whychooseus from "./whychooseus";
 
 function AboutUs() {
   return (

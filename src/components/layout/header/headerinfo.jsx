@@ -3,18 +3,22 @@ import { Link } from "react-router-dom";
 import PagesDropdown from "../../common/PagesDropdown";
 
 function Headerinfo(props) {
-  let [hovered, setHovered] = useState(null);
-  let items = [];
+  const [hovered, setHovered] = useState(null);
+  let items;
+
+  const home = { name: "Home", path: "/" };
+  const about = { name: "About", path: "/about" };
+  const courses = { name: "Courses", path: "/courses" };
+  const pages = {
+    name: "Pages",
+    component: <PagesDropdown dropend={props.dropend} />,
+  };
+  const contact = { name: "Contact", path: "/contact" };
+
   if (props.dropend) {
-    items = [
-      "Home",
-      "Courses",
-      "About",
-      <PagesDropdown dropend={true} />,
-      "Contact",
-    ];
+    items = [home, courses, about, pages, contact];
   } else {
-    items = ["Home", "About", "Courses", <PagesDropdown />, "Contact"];
+    items = [home, about, courses, pages, contact];
   }
 
   return (
@@ -22,27 +26,30 @@ function Headerinfo(props) {
       {items.map((item, index) => (
         <div
           className="items"
-          key={item}
+          key={item.name}
           onMouseEnter={() => setHovered(index)}
           onMouseLeave={() => setHovered(null)}
         >
-          <Link
-            to={`/${item}`}
-            className="link-text"
-            style={{
-              color: hovered === index ? "#1bceffff" : "black",
-              cursor: "pointer",
-              fontWeight: "bold",
-              transition: "color 0.3s ease",
-            }}
-          >
-            {" "}
-            {props.currentPage === item ? (
-              <div className="currentPage text-primary"> {item}</div>
-            ) : (
-              item
-            )}
-          </Link>
+          {item.component ? (
+            item.component
+          ) : (
+            <Link
+              to={item.path}
+              className="link-text"
+              style={{
+                color: hovered === index ? "#1bceffff" : "black",
+                cursor: "pointer",
+                fontWeight: "bold",
+                transition: "color 0.3s ease",
+              }}
+            >
+              {props.currentPage === item.name ? (
+                <div className="currentPage text-primary"> {item.name}</div>
+              ) : (
+                item.name
+              )}
+            </Link>
+          )}
         </div>
       ))}
     </div>
