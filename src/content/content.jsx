@@ -1,6 +1,7 @@
 import "./content.css";
 import Aboutus from "../pages/about/aboutus";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Row, Col, Container } from "react-bootstrap";
 
 import Button from "react-bootstrap/Button";
 
@@ -12,19 +13,34 @@ function Content() {
           <p className="fw-bold fs-2">Learn From Home</p>
           <h2 className="fw-bold display-1">Education Courses</h2>
         </div>
-        <div className="d-flex justify-content-center align-items-center search-section">
-          <span className="searchbox mx-auto mb-5">
-            <CourseDropdown className="select" />
-            <input type="text" placeholder="Keyword" className="search-input" />
-            <Button variant="danger" className="border-danger">
-              Search
-            </Button>
 
-            {/* <button className="btn btn-danger border-danger ">
-                    Search
-                  </button> */}
-          </span>
-        </div>
+        <Container className="ps-5 search-section">
+          <Row className="p-0 m-0">
+            <Col
+              xs={3}
+              sm={3}
+              md={3}
+              lg={3}
+              xl={3}
+              className="p-0 m-0 d-flex justify-content-end  "
+            >
+              {" "}
+              <CourseDropdown className="select  " />
+            </Col>
+            <Col xs={7} sm={7} md={7} lg={7} xl={7} className="p-0 m-0 ">
+              <input
+                type="text"
+                placeholder="Keyword"
+                className="search-input w-100 h-100 border-1"
+              />
+            </Col>
+            <Col xs={2} sm={2} md={2} lg={2} xl={2} className="p-0 m-0 ">
+              <Button variant="danger" className="border-danger h-100  ">
+                Search
+              </Button>
+            </Col>
+          </Row>
+        </Container>
       </div>
       <Aboutus />
 
