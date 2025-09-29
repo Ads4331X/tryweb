@@ -43,7 +43,7 @@ Button {
 
 .course-dropdown {
   border: none;
-  padding: 20.6px;
+  padding: 14.6px;
   background-color: white;
 }
 
@@ -53,7 +53,7 @@ Button {
     box-sizing: border-box;
   }
   .course-dropdown {
-    padding: 18px;
+    padding: 10px;
   }
   .course-menu {
     margin-left: -21px !important;
