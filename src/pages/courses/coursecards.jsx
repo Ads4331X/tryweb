@@ -4,21 +4,17 @@ import { FaStar } from "react-icons/fa";
 
 function Coursecards(props) {
   return (
-    <Card
-      className="text-light course-card w-100 h-100"
-
-    >
+    <Card className="text-light course-card ">
       <Card.Body
-        className="text-center d-flex align-items-end justify-content-end flex-column card-body position-relative"
+        className="text-center m-0 p d-flex align-items-center justify-content-center flex-column card-body position-relative w-100 h-100"
         style={{
           backgroundImage: `linear-gradient(to bottom, rgba(18, 15, 45, 0), #120f2d), url(${props.bgImg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          backgroundBlendMode: "multiply",
         }}
       >
-        <div>
+        <div style={{ paddingTop: "80%" }}>
           <h4 className="fw-bold">{props.coursename}</h4>
           <hr className="course-hr" />
           <div className="d-flex justify-content-around align-items-center  pt-5 course-info ">

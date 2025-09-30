@@ -3,30 +3,23 @@ import Coursecards from "./coursecards";
 import courseDataWithIds from "./CourseData.jsx";
 import { useContainerWidth } from "./coursecardquantity";
 import { Button } from "react-bootstrap";
+import { useVisibilityObserber } from "./useVisibilityObserver.jsx";
 
 function Slider() {
-  let [slide, setslide] = useState(false);
   const [containerRef, containerWidth] = useContainerWidth();
+  const slide = useVisibilityObserber(containerRef);
   let intervalID = useRef(null);
   const trackRef = useRef(null);
-  useEffect(() => {
-    let observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !slide) setslide(true);
-      },
-      { threshold: 0.5 }
-    );
-    if (containerRef.current) observer.observe(containerRef.current);
-    return () => observer.disconnect();
-  }, [slide]);
 
-  let [scrollindex, setscrollindex] = useState(0);
-  let extendedData = [...courseDataWithIds, ...courseDataWithIds.slice(0, 3)];
+  let [scrollindex, setscrollindex] = useState(courseDataWithIds.length);
+  let extendedData = [
+    ...courseDataWithIds.slice(-3),
+    ...courseDataWithIds,
+    ...courseDataWithIds.slice(0, 3),
+  ];
 
   const cardsPerView =
-    containerWidth >= 1200
-      ? 4
-      : containerWidth >= 992
+    containerWidth >= 1200 || containerWidth >= 992
       ? 4
       : containerWidth >= 768
       ? 2
@@ -37,7 +30,7 @@ function Slider() {
     if (slide) {
       intervalID.current = setInterval(() => {
         setscrollindex((prev) => prev + 1);
-      }, 4000);
+      }, 40000);
       return () => clearInterval(intervalID.current);
     }
   }, [slide]);
@@ -99,9 +92,7 @@ function Slider() {
                 }, 300);
               }}
             >
-              <div
-                className={`card-container text-center cardindex === i ? "hovered-card" : ""`}
-              >
+              <div className={`card-container text-center w-100`}>
                 <Coursecards {...c} />
                 {cardindex === i && (
                   <div className="d-flex justify-content-center align-items-center flex-column ">

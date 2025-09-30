@@ -15,5 +15,6 @@ export function useContainerWidth() {
     setcontainerwidth(containerRef.current.offsetWidth);
     return () => window.removeEventListener("resize", update);
   }, []);
+
   return [containerRef, containerwidth];
 }
