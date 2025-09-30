@@ -68,7 +68,6 @@ function Slider() {
               key={i}
               style={{
                 flex: `0 0 ${cardWidth}px`,
-                // transition: "transform 0.3s ease",
               }}
               onMouseEnter={() => {
                 clearTimeout(resetTimeout.current);
@@ -84,14 +83,12 @@ function Slider() {
                 }, 300);
               }}
             >
-              <div className={` text-center `}>
+              <div className={` text-center w-100 `}>
                 <Coursecards {...c} />
-                {cardindex === i && (
-                  <Button variant="primary" className="w-50 course-button m-4 ">
-                    Course Details
-                  </Button>
-                )}
               </div>
+              <Button variant="primary" className="w-50 course-button m-4 ">
+                Course Details
+              </Button>
             </div>
           );
         })}

@@ -3,7 +3,8 @@
   overflow-y: hidden;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  scroll-snap-type: x mandatory;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .slide-bar::-webkit-scrollbar {
@@ -11,15 +12,18 @@
 }
 
 .course-card {
-  width: 350px !important;
-  min-height: 450px !important;
+  width: 100% !important;
+  height: 450px !important;
   margin: 0;
+  padding: 0;
   border-radius: 0;
   cursor: pointer;
-  transition: transform 0.3s ease;
 }
+
 .course-info {
   margin-top: -30px;
+  font-weight: lighter !important;
+  margin-bottom: -10px;
 }
 
 .course-hr {
@@ -29,52 +33,26 @@
   left: 0;
   right: 0;
 }
+
 .small {
   font-size: 14px !important;
   margin-top: 20px !important;
 }
 
-.course-info {
-  font-weight: lighter !important;
-  margin-bottom: -10px;
-}
-
 .slide-bar > .card-wrapper:first-child {
   margin-left: 0 !important;
-}
-.slide-bar {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.course-card {
-  width: 100% !important;
-  margin: 0;
-  padding: 0;
 }
 
 .card-wrapper {
   display: flex;
-}
-
-.card-wrapper {
   position: relative !important;
 }
 
 .card-container {
   transition: transform 0.6s ease-in-out;
+  transform: translateY(70px);
 }
 
 .card-container:hover {
-  transform: translateY(-30px);
+  transform: translateY(0);
 }
-
-/* .course-button {
-  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1),
-    box-shadow 0.4s ease;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-} */
