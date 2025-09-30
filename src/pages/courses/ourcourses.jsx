@@ -12,9 +12,7 @@ function Ourcourses() {
           </h1>
         </div>
       </div>
-      <div className="slider">
-        <Slider />
-      </div>
+      <Slider />
     </div>
   );
 }

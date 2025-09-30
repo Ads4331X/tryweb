@@ -6,7 +6,7 @@ function Coursecards(props) {
   return (
     <Card className="text-light course-card ">
       <Card.Body
-        className="text-center m-0 p d-flex align-items-center justify-content-center flex-column card-body position-relative w-100 h-100"
+        className="text-center  d-flex align-items-center justify-content-center flex-column  "
         style={{
           backgroundImage: `linear-gradient(to bottom, rgba(18, 15, 45, 0), #120f2d), url(${props.bgImg})`,
           backgroundSize: "cover",

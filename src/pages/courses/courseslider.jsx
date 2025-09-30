@@ -30,53 +30,45 @@ function Slider() {
     if (slide) {
       intervalID.current = setInterval(() => {
         setscrollindex((prev) => prev + 1);
-      }, 40000);
+      }, 4000);
       return () => clearInterval(intervalID.current);
     }
   }, [slide]);
 
-  useEffect(() => {
-    if (scrollindex === courseDataWithIds.length) {
-      setTimeout(() => {
-        if (trackRef.current) {
-          trackRef.current.style.transition = "none";
-        }
-        setscrollindex(0);
-        setTimeout(() => {
-          if (trackRef.current)
-            trackRef.current.style.transition = "transform 0.5s ease-in-out";
-        }, 50);
-      }, 500);
-    }
-  }, [scrollindex]);
+  // useEffect(() => {
+  //   if (scrollindex === courseDataWithIds.length) {
+  //     setTimeout(() => {
+  //       if (trackRef.current) {
+  //         trackRef.current.style.transition = "none";
+  //       }
+  //       setscrollindex(0);
+  //       setTimeout(() => {
+  //         if (trackRef.current) trackRef.current.style.transition = "none";
+  //       }, 50);
+  //     }, 500);
+  //   }
+  // }, [scrollindex]);
 
   let [cardindex, setcardindex] = useState(null);
   const resetTimeout = useRef(null);
 
   return (
     <div
-      className="d-flex justify-content-start align-items-center overflow-x-auto slide-bar"
+      className="d-flex justify-content-start align-items-center slide-bar"
       ref={containerRef}
     >
       <div
         className="card-wrapper"
-        ref={trackRef}
-        style={{
-          transform: `translateX(-${scrollindex * cardWidth}px)`,
-          transition: "transform 0.5s ease-in-out",
-          display: "flex",
-        }}
+        // ref={trackRef}
       >
         {extendedData.map((c, i) => {
           return (
             <div
-              className={`d-flex text-center justify-content-center align-items-center flex-column card-${i} ${
-                cardindex === i ? "hovered-card" : ""
-              }`}
+              className={`d-flex text-center justify-content-center align-items-center flex-column card-container  `}
               key={i}
               style={{
                 flex: `0 0 ${cardWidth}px`,
-                transition: "transform 0.3s ease",
+                // transition: "transform 0.3s ease",
               }}
               onMouseEnter={() => {
                 clearTimeout(resetTimeout.current);
@@ -92,17 +84,12 @@ function Slider() {
                 }, 300);
               }}
             >
-              <div className={`card-container text-center w-100`}>
+              <div className={` text-center `}>
                 <Coursecards {...c} />
                 {cardindex === i && (
-                  <div className="d-flex justify-content-center align-items-center flex-column ">
-                    <Button
-                      variant="primary"
-                      className="w-50 course-button m-4 "
-                    >
-                      Course Details
-                    </Button>
-                  </div>
+                  <Button variant="primary" className="w-50 course-button m-4 ">
+                    Course Details
+                  </Button>
                 )}
               </div>
             </div>
