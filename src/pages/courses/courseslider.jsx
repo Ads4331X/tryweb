@@ -11,7 +11,7 @@ function Slider() {
   let intervalID = useRef(null);
   const trackRef = useRef(null);
 
-  let [scrollindex, setscrollindex] = useState(courseDataWithIds.length);
+  let [scrollindex, setscrollindex] = useState(3);
   let extendedData = [
     ...courseDataWithIds.slice(-3),
     ...courseDataWithIds,
@@ -35,19 +35,34 @@ function Slider() {
     }
   }, [slide]);
 
-  // useEffect(() => {
-  //   if (scrollindex === courseDataWithIds.length) {
-  //     setTimeout(() => {
-  //       if (trackRef.current) {
-  //         trackRef.current.style.transition = "none";
-  //       }
-  //       setscrollindex(0);
-  //       setTimeout(() => {
-  //         if (trackRef.current) trackRef.current.style.transition = "none";
-  //       }, 50);
-  //     }, 500);
-  //   }
-  // }, [scrollindex]);
+  useEffect(() => {
+    if (scrollindex >= courseDataWithIds.length + 3) {
+      setTimeout(() => {
+        if (trackRef.current) {
+          trackRef.current.style.transition = "none";
+        }
+        setscrollindex(3);
+        setTimeout(() => {
+          if (trackRef.current) {
+            trackRef.current.style.transition = "transform 0.5s ease-in-out";
+          }
+        }, 50);
+      }, 500);
+    }
+    if (scrollindex < 3) {
+      setTimeout(() => {
+        if (trackRef.current) {
+          trackRef.current.style.transition = "none";
+        }
+        setscrollindex(courseDataWithIds.length + 2);
+        setTimeout(() => {
+          if (trackRef.current) {
+            trackRef.current.style.transition = "transform 0.5s ease-in-out";
+          }
+        }, 50);
+      }, 500);
+    }
+  }, [scrollindex]);
 
   let [cardindex, setcardindex] = useState(null);
   const resetTimeout = useRef(null);
@@ -59,7 +74,11 @@ function Slider() {
     >
       <div
         className="card-wrapper"
-        // ref={trackRef}
+        ref={trackRef}
+        style={{
+          transform: `translateX(-${scrollindex * cardWidth}px)`,
+          transition: "transform 0.5s ease-in-out",
+        }}
       >
         {extendedData.map((c, i) => {
           return (
