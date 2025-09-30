@@ -4,7 +4,10 @@ import { FaStar } from "react-icons/fa";
 
 function Coursecards(props) {
   return (
-    <Card className="text-light course-card w-100 h-100">
+    <Card
+      className="text-light course-card w-100 h-100"
+
+    >
       <Card.Body
         className="text-center d-flex align-items-end justify-content-end flex-column card-body position-relative"
         style={{
@@ -18,7 +21,7 @@ function Coursecards(props) {
         <div>
           <h4 className="fw-bold">{props.coursename}</h4>
           <hr className="course-hr" />
-          <div className="d-flex justify-content-between align-items-center  pt-5 course-info ">
+          <div className="d-flex justify-content-around align-items-center  pt-5 course-info ">
             <div className="d-flex align-items-center justify-content-center fs-5">
               <p>
                 <FaUser />

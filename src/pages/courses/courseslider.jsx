@@ -1,16 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import Coursecards from "./coursecards";
 import courseDataWithIds from "./CourseData.jsx";
-// import { useCardWidth } from "./coursecardwidth";
 import { useContainerWidth } from "./coursecardquantity";
+import { Button } from "react-bootstrap";
 
 function Slider() {
   let [slide, setslide] = useState(false);
   const [containerRef, containerWidth] = useContainerWidth();
   let intervalID = useRef(null);
   const trackRef = useRef(null);
-  //   let [index, setindex] = useState(0);
-  //   let [cardRef, cardWidth] = useCardWidth();
   useEffect(() => {
     let observer = new IntersectionObserver(
       ([entry]) => {
@@ -38,9 +36,6 @@ function Slider() {
   useEffect(() => {
     if (slide) {
       intervalID.current = setInterval(() => {
-        // setindex(
-        //   (previousindex) => (previousindex + 1) % courseDataWithIds.length
-        // );
         setscrollindex((prev) => prev + 1);
       }, 4000);
       return () => clearInterval(intervalID.current);
@@ -62,6 +57,9 @@ function Slider() {
     }
   }, [scrollindex]);
 
+  let [cardindex, setcardindex] = useState(null);
+  const resetTimeout = useRef(null);
+
   return (
     <div
       className="d-flex justify-content-start align-items-center overflow-x-auto slide-bar"
@@ -79,11 +77,43 @@ function Slider() {
         {extendedData.map((c, i) => {
           return (
             <div
-              className="d-flex"
+              className={`d-flex text-center justify-content-center align-items-center flex-column card-${i} ${
+                cardindex === i ? "hovered-card" : ""
+              }`}
               key={i}
-              style={{ flex: `0 0 ${cardWidth}px` }}
+              style={{
+                flex: `0 0 ${cardWidth}px`,
+                transition: "transform 0.3s ease",
+              }}
+              onMouseEnter={() => {
+                clearTimeout(resetTimeout.current);
+                setcardindex(i);
+              }}
+              onTouchStart={() => {
+                clearTimeout(resetTimeout.current);
+                setcardindex(i);
+              }}
+              onMouseLeave={() => {
+                resetTimeout.current = setTimeout(() => {
+                  setcardindex(null);
+                }, 300);
+              }}
             >
-              <Coursecards {...c} />
+              <div
+                className={`card-container text-center cardindex === i ? "hovered-card" : ""`}
+              >
+                <Coursecards {...c} />
+                {cardindex === i && (
+                  <div className="d-flex justify-content-center align-items-center flex-column ">
+                    <Button
+                      variant="primary"
+                      className="w-50 course-button m-4 "
+                    >
+                      Course Details
+                    </Button>
+                  </div>
+                )}
+              </div>
             </div>
           );
         })}
