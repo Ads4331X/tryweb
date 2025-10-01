@@ -1,5 +1,6 @@
 .slide-bar {
   overflow-x: scroll;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   box-sizing: border-box;
   padding: 0 !important;
@@ -54,4 +55,12 @@
 
 .card-container:hover {
   transform: translateY(0);
+}
+
+.course-container {
+  transition: translate 0.4s ease-in-out;
+}
+
+.card-container:hover .course-container {
+  translate: 0px -60px;
 }

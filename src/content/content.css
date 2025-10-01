@@ -89,6 +89,10 @@ input {
   color: gray;
 }
 
+.discounthome {
+  margin-top: -1.5rem !important;
+}
+
 @media screen and (max-width: 380px) {
   .main-content {
     padding: 2rem;
