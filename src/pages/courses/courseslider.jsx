@@ -64,9 +64,6 @@ function Slider() {
     }
   }, [scrollindex]);
 
-  let [cardindex, setcardindex] = useState(null);
-  const resetTimeout = useRef(null);
-
   return (
     <div
       className="d-flex justify-content-start align-items-center slide-bar"
@@ -87,19 +84,6 @@ function Slider() {
               key={i}
               style={{
                 flex: `0 0 ${cardWidth}px`,
-              }}
-              onMouseEnter={() => {
-                clearTimeout(resetTimeout.current);
-                setcardindex(i);
-              }}
-              onTouchStart={() => {
-                clearTimeout(resetTimeout.current);
-                setcardindex(i);
-              }}
-              onMouseLeave={() => {
-                resetTimeout.current = setTimeout(() => {
-                  setcardindex(null);
-                }, 300);
               }}
             >
               <div className={` text-center w-100 `}>
