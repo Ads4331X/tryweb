@@ -14,7 +14,6 @@ function Ourcourses() {
       </div>
       <CourseCarousel />
      </div> 
-     // this is comment
   );
 }
 export default Ourcourses;
