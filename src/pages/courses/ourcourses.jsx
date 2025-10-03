@@ -13,7 +13,8 @@ function Ourcourses() {
         </div>
       </div>
       <CourseCarousel />
-     </div>
+     </div> 
+     // this is comment
   );
 }
 export default Ourcourses;
