@@ -41,9 +41,10 @@
 }
 
 .card-container {
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   transform: translateY(55px);
 }
+
 
 .card-container:hover {
   transform: translateY(0);
@@ -65,13 +66,13 @@
 }
 
 .course-img img {
-  transition: all 0.4s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .card-container:hover .course-img img {
-  transform: translateY(-20px);
+  transform: translateY(-40px);
 }
 
 .card-container:hover .course-text {
-  transform: translateY(-60px);
+  transform: translateY(-0px);
 }

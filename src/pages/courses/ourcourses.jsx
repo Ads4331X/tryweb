@@ -1,5 +1,5 @@
 import "./ourcourses.css";
-import Slider from "./courseslider.jsx";
+import CourseCarousel from "./CourseCarousel/index.jsx";
 
 function Ourcourses() {
   return (
@@ -12,8 +12,8 @@ function Ourcourses() {
           </h1>
         </div>
       </div>
-      <Slider />
-    </div>
+      <CourseCarousel />
+     </div>
   );
 }
 export default Ourcourses;

@@ -3,6 +3,7 @@ import Courses from "./pages/courses/courses";
 import About from "./pages/about/about";
 import Contact from "./pages/contact/contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "swiper/css";
 
 function App() {
   return (

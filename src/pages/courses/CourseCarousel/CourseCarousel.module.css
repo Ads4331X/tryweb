@@ -1,0 +1,32 @@
+.sliderItem {
+  --translateY: 40px;
+}
+
+.courseCard {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(70px);
+  background: linear-gradient(rgba(18, 15, 45, 0), rgb(18, 15, 45));
+}
+
+.swiperSlide {
+  margin-top: var(--translateY);
+}
+
+.courseCard {
+  transition: all 0.5s ease-in-out;
+}
+
+.swiperSlide:hover .courseCard {
+  transform: translateY(0px);
+}
+
+.swiperSlide img {
+  transition: all 0.5s ease-in-out;
+}
+
+.swiperSlide:hover img {
+  transform: translateY(calc(-1 * var(--translateY)));
+}
