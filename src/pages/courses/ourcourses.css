@@ -13,6 +13,7 @@
 
 .course-card {
   width: 100% !important;
+  max-height: 900px;
   margin: 0;
   padding: 0;
   border-radius: 0;
@@ -23,14 +24,6 @@
   margin-top: -30px;
   font-weight: lighter !important;
   margin-bottom: -10px;
-}
-
-.course-hr {
-  border: 1px solid whitesmoke;
-  opacity: 1;
-  position: absolute;
-  left: 0;
-  right: 0;
 }
 
 .small {
@@ -48,7 +41,7 @@
 }
 
 .card-container {
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.4s ease-in-out;
   transform: translateY(55px);
 }
 
@@ -68,18 +61,17 @@
 
 .course-img-container {
   position: relative;
-  height: 450px;
   overflow: hidden;
 }
 
 .course-img img {
-  transition: transform 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
+
 .card-container:hover .course-img img {
   transform: translateY(-20px);
 }
 
 .card-container:hover .course-text {
-  /* height: calc(100% + 46px); */
-  transform: translateY(-65px);
+  transform: translateY(-60px);
 }
