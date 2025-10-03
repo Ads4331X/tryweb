@@ -6,9 +6,9 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  border: none !important;
   width: 100%;
-  transform: translateY(70px);
+  transform: translateY(70px) translateZ(0);
+  backface-visibility: hidden;
   background: linear-gradient(rgba(18, 15, 45, 0), rgb(18, 15, 45));
 }
 

@@ -12,7 +12,7 @@ import css from "./CourseCarousel.module.css";
 
 const CourseCarousel = () => {
   return (
-    <Container className="border-0">
+    <Container>
       <Swiper
         modules={{ Autoplay }}
         autoplay={{
@@ -45,11 +45,16 @@ const CourseCarousel = () => {
       >
         {courseDataWithIds.map((course) => (
           <SwiperSlide
-            className={`bg-white text-light ${css.sliderItem}`}
+            className={`text-light ${css.sliderItem}`}
             key={course.id}
           >
             <div className={css.swiperSlide}>
-              <img src={course.bgImg} alt={course.title} />
+              {" "}
+              <img
+                src={course.bgImg}
+                alt={course.title}
+                className="w-100 img-fluid"
+              />
               <div className={css.courseCard}>
                 <h3 className="p-3 fs-4 text-center">{course.coursename}</h3>
                 <div className="border-bottom" />
@@ -66,8 +71,10 @@ const CourseCarousel = () => {
                     </span>
                   </div>
                 </div>
-                <div className="p-3 d-flex align-items-center justify-content-center bg-white border-0">
-                  <Button variant="primary">Course Details</Button>
+                <div className="p-3 d-flex align-items-center justify-content-center bg-white ">
+                  <Button variant="primary" className="border-0">
+                    Course Details
+                  </Button>
                 </div>
               </div>
             </div>
