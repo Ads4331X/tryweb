@@ -1,6 +1,5 @@
-import "./ourcourses.css";
-import CourseCarousel from "./CourseCarousel/index.jsx";
 
+import CourseCarousel from "./CourseCarousel/index.jsx";
 function Ourcourses() {
   return (
     <div>
@@ -13,7 +12,7 @@ function Ourcourses() {
         </div>
       </div>
       <CourseCarousel />
-     </div> 
+    </div>
   );
 }
 export default Ourcourses;

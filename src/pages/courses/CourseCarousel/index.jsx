@@ -12,7 +12,7 @@ import css from "./CourseCarousel.module.css";
 
 const CourseCarousel = () => {
   return (
-    // <Container className="border-0">
+    <Container className="border-0">
       <Swiper
         modules={{ Autoplay }}
         autoplay={{
@@ -73,8 +73,8 @@ const CourseCarousel = () => {
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>
-    // </Container>
+      </Swiper>{" "}
+    </Container>
   );
 };
 
