@@ -32,7 +32,7 @@ function Content() {
               <input
                 type="text"
                 placeholder=" &nbsp; &nbsp;Keyword"
-                className="search-input w-100 h-100 border-1"
+                className="search-input w-100 h-100 border-1 border-light"
               />
             </Col>
             <Col xs={2} sm={2} md={2} lg={2} xl={2} className="p-0 m-0 ">
@@ -45,7 +45,7 @@ function Content() {
       </div>
       <Aboutus />
       <Ourcourses />
-      <Discount />
+      {/* <Discount /> */}
 
       <br />
     </div>

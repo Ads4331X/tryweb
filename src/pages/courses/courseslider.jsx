@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Coursecards from "./coursecards";
 import courseDataWithIds from "./CourseData.jsx";
-import { useContainerWidth } from "./coursecardquantity";
+import { useContainerWidth } from "./useContainerWidth.jsx";
 import { Button } from "react-bootstrap";
 import { useVisibilityObserber } from "./useVisibilityObserver.jsx";
 
@@ -89,9 +89,12 @@ function Slider() {
               <div className={` text-center w-100 `}>
                 <Coursecards {...c} />
               </div>
-              <Button variant="primary" className="w-50 course-button m-4 ">
-                Course Details
-              </Button>
+              <div className=" d-flex justify-content-center align-items-center w-50 m-3">
+                {" "}
+                <Button variant="primary" className="course-button">
+                  Course Details
+                </Button>
+              </div>
             </div>
           );
         })}

@@ -42,7 +42,7 @@ Button {
 }
 
 .course-dropdown {
-  border: none;
+  border: none !important;
   padding: 14.6px;
   background-color: white;
 }
