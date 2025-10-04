@@ -1,33 +1,62 @@
 .sliderItem {
-  --translateY: 40px;
+  --translateY: 84px;
+  --transition: 0.5s;
 }
 
-.courseCard {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  transform: translateY(70px) translateZ(0);
-  backface-visibility: hidden;
-  background: linear-gradient(rgba(18, 15, 45, 0), rgb(18, 15, 45));
+.slider {
+  overflow: hidden;
 }
 
 .swiperSlide {
-  margin-top: var(--translateY);
+  min-height: 400px;
+  transform: translateY(var(--translateY));
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* background: red; */
+}
+
+.swiperSlide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#120f2d00, rgb(18, 15, 45));
 }
 
 .courseCard {
-  transition: all 0.5s ease-in-out;
+  height: 100%;
+  position: relative;
+  transition: var(--transition);
+  z-index: 1;
 }
 
-.swiperSlide:hover .courseCard {
-  transform: translateY(0px);
+.actionButton {
+  transform: translateY(var(--translateY));
+  transition: var(--transition);
+}
+
+.sliderItem:hover .courseCard {
+  transform: translateY(calc(-1 * var(--translateY)));
 }
 
 .swiperSlide img {
-  transition: all 0.5s ease-in-out;
+  transition: var(--transition);
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + var(--translateY));
 }
 
-.swiperSlide:hover img {
-  transform: translateY(calc(-1 * var(--translateY)));
+.sliderItem:hover img {
+  transform: translateY(calc(-1 * var(--translateY) / 2));
+}
+
+.sliderItem:hover .actionButton {
+  transform: translateY(0);
 }

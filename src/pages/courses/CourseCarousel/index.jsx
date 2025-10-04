@@ -49,7 +49,6 @@ const CourseCarousel = () => {
             key={course.id}
           >
             <div className={css.swiperSlide}>
-              {" "}
               <img
                 src={course.bgImg}
                 alt={course.title}
@@ -60,7 +59,6 @@ const CourseCarousel = () => {
                 <div className="border-bottom" />
                 <div className="d-flex justify-content-between  p-3">
                   <h4 className="fs-6">
-                    {" "}
                     <FaUser /> &nbsp;
                     {course.teachername}
                   </h4>
@@ -71,12 +69,14 @@ const CourseCarousel = () => {
                     </span>
                   </div>
                 </div>
-                <div className="p-3 d-flex align-items-center justify-content-center bg-white ">
-                  <Button variant="primary" className="border-0">
-                    Course Details
-                  </Button>
-                </div>
               </div>
+            </div>
+            <div
+              className={`p-4 d-flex align-items-center justify-content-center bg-white ${css.actionButton}`}
+            >
+              <Button variant="primary" className="border-0">
+                Course Details
+              </Button>
             </div>
           </SwiperSlide>
         ))}

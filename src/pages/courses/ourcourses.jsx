@@ -1,4 +1,3 @@
-
 import CourseCarousel from "./CourseCarousel/index.jsx";
 function Ourcourses() {
   return (
@@ -12,6 +11,7 @@ function Ourcourses() {
         </div>
       </div>
       <CourseCarousel />
+      <div style={{ height: "100vh" }} />
     </div>
   );
 }
