@@ -17,8 +17,7 @@
   /* background: red; */
 }
 
-.swiperSlide::after {
-  content: "";
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -31,7 +30,7 @@
   height: 100%;
   position: relative;
   transition: var(--transition);
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .actionButton {

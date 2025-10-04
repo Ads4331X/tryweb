@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col, Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Ourcourses from "../pages/courses/ourcourses";
-import Discount from "../components/common/discount";
+import Discount from "../components/subcontent/discount/discount.jsx";
 
 function Content() {
   return (
@@ -45,7 +45,7 @@ function Content() {
       </div>
       <Aboutus />
       <Ourcourses />
-      {/* <Discount /> */}
+      <Discount />
 
       <br />
     </div>

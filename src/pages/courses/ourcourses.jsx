@@ -11,7 +11,6 @@ function Ourcourses() {
         </div>
       </div>
       <CourseCarousel />
-      <div style={{ height: "100vh" }} />
     </div>
   );
 }
