@@ -39,6 +39,10 @@
   transition: var(--transition);
 }
 
+small {
+  font-size: 12px;
+}
+
 .sliderItem:hover .courseCard {
   transform: translateY(calc(-1 * var(--translateY)));
 }

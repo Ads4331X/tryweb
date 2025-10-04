@@ -65,7 +65,10 @@ const CourseCarousel = () => {
                   <div>
                     <span className="fs-6">
                       <FaStar /> &nbsp;
-                      {course.rating}( {course.ratednumber})
+                      {course.rating}&nbsp;
+                      <small className="fw-normal">
+                        ({course.ratednumber})
+                      </small>
                     </span>
                   </div>
                 </div>
