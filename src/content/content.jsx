@@ -3,8 +3,8 @@ import Aboutus from "../pages/about/aboutus";
 import { Row, Col, Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Ourcourses from "../pages/courses/ourcourses";
-import Discount from "../components/subcontent/discount/Discount";
-import Instructor from "../components/common/instructors/Instructor";
+import Discount from "../components/subcontent/discount/Discount.jsx";
+import Instructor from "../components/common/instructors/Instructor.jsx";
 function Content() {
   return (
     <div>
