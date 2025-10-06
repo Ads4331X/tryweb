@@ -1,0 +1,36 @@
+.discount {
+  background: linear-gradient(
+      rgba(40, 120, 235, 0.05),
+      rgba(40, 120, 235, 0.05)
+    ),
+    url(https://themewagon.github.io/Edukate/img/bg-image.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  display: grid;
+  place-items: center;
+}
+
+.input,
+.select {
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 0px;
+}
+
+.input,
+.select,
+.btn {
+  padding: 20px;
+}
+
+.input,
+.select {
+  transition: all 0.15s ease-in-out;
+}
+
+.input,
+.input:focus,
+.select {
+  background-color: #ecf4ff;
+}
