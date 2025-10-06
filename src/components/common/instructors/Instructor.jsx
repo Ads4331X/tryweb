@@ -9,5 +9,7 @@ function Instructor() {
       </span>
     </div>
   );
+  
 }
 export default Instructor;
+
