@@ -1,0 +1,57 @@
+.Container {
+  --translateX: -10px;
+}
+
+.Slide {
+  background-color: #ecf4ff;
+  width: fit-content;
+}
+
+.SliderItem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ImgContainer {
+  width: 100%;
+  max-width: 100%;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev {
+  margin-left: 2rem;
+}
+
+.next {
+  margin-right: 2rem;
+}
+
+.prev,
+.next {
+  width: 60px;
+  height: 60px;
+  background: #2878eb;
+  transition: all 0.5s ease-in-out;
+}
+
+.prev svg,
+.next svg {
+  display: none;
+}
+
+.prev:hover,
+.next:hover {
+  background: #f14d5d !important;
+}

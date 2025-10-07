@@ -1,7 +1,6 @@
-import React from "react";
 import courseDataWithIds from "../CourseData";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
 import { FaUser } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
@@ -54,7 +53,7 @@ const CourseCarousel = () => {
                 alt={course.title}
                 className="w-100 img-fluid"
               />
-              <div className={css.overlay}/>
+              <div className={css.overlay} />
               <div className={css.courseCard}>
                 <h3 className="p-3 fs-4 text-center">{course.coursename}</h3>
                 <div className="border-bottom" />
