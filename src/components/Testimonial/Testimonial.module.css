@@ -5,11 +5,9 @@
     ),
     url(https://themewagon.github.io/Edukate/img/bg-image.jpg);
   background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
+  background-size: 100% 50%;
   background-repeat: no-repeat;
-  /* margin-top: 8rem; */
-  /* padding-bottom: 6rem; */
+
   padding: 4rem;
 }
 
