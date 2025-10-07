@@ -5,6 +5,8 @@ import Button from "react-bootstrap/Button";
 import Ourcourses from "../pages/courses/ourcourses";
 import Discount from "../components/subcontent/discount/Discount.jsx";
 import Instructor from "../components/common/instructors/Instructor.jsx";
+import Testimonial from "../components/Testimonial/Testimonial.jsx";
+
 function Content() {
   return (
     <div>
@@ -46,6 +48,7 @@ function Content() {
       <Ourcourses />
       <Discount />
       <Instructor />
+      <Testimonial />
 
       <br />
     </div>

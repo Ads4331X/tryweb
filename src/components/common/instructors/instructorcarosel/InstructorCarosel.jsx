@@ -5,7 +5,7 @@ import "swiper/css/autoplay";
 import "swiper/css/navigation";
 
 import InstructorData from "../InstructorsData";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import css from "./InstructorCarosel.module.css";
 import {
   FaTwitter,
@@ -27,7 +27,6 @@ function InstructorCarosel() {
           prevEl: ".swiper-button-prev",
           nextEl: ".swiper-button-next",
         }}
-        translate="yes"
         loop={true}
         breakpoints={{
           0: { slidesPerView: 1, spaceBetween: 10 },

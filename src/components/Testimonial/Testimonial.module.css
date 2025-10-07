@@ -1,0 +1,68 @@
+.container {
+  background: linear-gradient(
+      rgba(40, 120, 235, 0.05),
+      rgba(40, 120, 235, 0.05)
+    ),
+    url(https://themewagon.github.io/Edukate/img/bg-image.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 8rem;
+  padding-bottom: 6rem;
+  padding-top: 4rem;
+}
+
+.img {
+  width: 80px;
+  height: 80px;
+}
+
+.StudentInfo {
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Icon {
+  margin-top: 1rem;
+}
+
+.ButtonContainer {
+  width: fit-content;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+.prev,
+.next {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.prev svg,
+.next svg {
+  display: none;
+}
+
+.prev {
+  background-color: #f14d5d;
+}
+
+.next {
+  background-color: #2878eb;
+}
+
+.prev:hover {
+  background-color: #2878eb;
+}
+
+.next:hover {
+  background-color: #f14d5d;
+}

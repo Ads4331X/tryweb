@@ -1,0 +1,70 @@
+import { Container, Row, Col } from "react-bootstrap";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
+import css from "./Testimonial.module.css";
+
+import { StudentsTestimonial } from "./StudentsTestimonial.jsx";
+import { FaQuoteLeft } from "react-icons/fa";
+
+function TestimonialCarosel() {
+  return (
+    <Container className="p-0 ps-4 position-relative bg-white mt-5 ">
+      <div className={css.ButtonContainer}>
+        <div className="d-flex justify-content-center align-items-center ">
+          <div
+            className={`testimonial-button-prev ${css.prev} text-light fw-bold fs-4`}
+          >
+            {"<"}
+          </div>
+          <div
+            className={`testimonial-button-next ${css.next} text-white fw-bold fs-4`}
+          >
+            {">"}
+          </div>
+        </div>
+      </div>
+      <Swiper
+        modules={[Autoplay, Navigation]}
+        autoplay={{
+          delay: 4500,
+          disableOnInteraction: true,
+        }}
+        navigation={{
+          prevEl: ".testimonial-button-prev",
+          nextEl: ".testimonial-button-next",
+        }}
+        loop={true}
+      >
+        {StudentsTestimonial.map((student) => (
+          <SwiperSlide key={student.id}>
+            <div className="m-3 p-1">
+              <div className={`fs-1 text-primary mb-4 ${css.Icon}`}>
+                <FaQuoteLeft />
+              </div>
+              <div>
+                <p className="text-secondary fw-normal ">
+                  {student.Information}
+                </p>
+              </div>
+              <div className={`mt-4 d-flex gap-4 ${css.StudentInfo}`}>
+                <span>
+                  <img src={student.ProfilePic} className={` ${css.img}`} />
+                </span>
+                <div>
+                  <h5>{student.StdName}</h5>
+                  <span className="fs-6 text-secondary">
+                    {student.StdCourse}{" "}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </Container>
+  );
+}
+export default TestimonialCarosel;

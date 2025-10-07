@@ -17,12 +17,11 @@ img {
 }
 
 h6 {
-  color: hwb(9 0% 0%) !important;
+  color: #f14d5d !important ;
   padding-left: 10.5px;
-  text-decoration: 1px dashed hwb(9 0% 0%) underline;
+  text-decoration: 1px dashed #f14d5d underline;
   text-underline-offset: 9px;
 }
- 
 
 .info h1 {
   padding-left: 0.5rem;
@@ -44,5 +43,3 @@ h6 {
     margin-top: 24px;
   }
 }
-
-
