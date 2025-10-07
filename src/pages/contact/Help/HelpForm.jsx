@@ -3,8 +3,8 @@ import css from "./help.module.css";
 
 function HelpForm() {
   return (
-    <Container className="mt-4">
-      <div>
+    <Container className="mt-4 mb-5 pb-5">
+      <div className="mt-5">
         <h6 className="fs-5 p-0 mb-3">Need Help?</h6>
         <h1 className="display-4 fw-bold">Send Us A Message</h1>
       </div>

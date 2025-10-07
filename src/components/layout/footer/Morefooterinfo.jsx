@@ -25,7 +25,7 @@ function Morefooterinfo() {
         <p className={css.p}>
           <IoMdMail /> info@example.com
         </p>
-        <div className="d-flex gap-2 fs-2">
+        <div className="d-flex gap-2 fs-2 mb-4">
           <p>
             {" "}
             <FaTwitter />{" "}
