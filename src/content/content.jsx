@@ -8,6 +8,7 @@ import Instructor from "../components/common/instructors/Instructor.jsx";
 import Testimonial from "../components/Testimonial/Testimonial.jsx";
 import Help from "../pages/contact/Help/Help.jsx";
 import Footer from "../components/layout/footer/Footer.jsx";
+import GotoTop from "../components/subcontent/gototop.jsx";
 
 function Content() {
   return (
@@ -46,6 +47,7 @@ function Content() {
           </Row>
         </Container>
       </div>
+      <GotoTop />
       <Aboutus />
       <Ourcourses />
       <Discount />
