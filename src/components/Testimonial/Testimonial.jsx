@@ -5,7 +5,7 @@ import TestimonialCarosel from "./TestimonialCarosel";
 function Testimonial() {
   return (
     <div className={`${css.container} `}>
-      <Container fluid className="bg-transparent">
+      <Container >
         <Row>
           <Col xs={12} sm={12} md={12} lg={5} className="mt-0">
             <h6 className="fs-5">Testimonial</h6>
