@@ -12,7 +12,7 @@ function Testimonial() {
     <div className={`${css.container} `}>
       <Container>
         <Row>
-          <Col xs={12} sm={12} md={12} lg={5} className="mt-5">
+          <Col xs={12} sm={12} md={12} lg={5} className="mt-0">
             <h6 className="fs-5">Testimonial</h6>
             <h1 className="display-4 fw-bold">What Say Our Students</h1>
             <p className="m-0 text-secondary fw-normal">

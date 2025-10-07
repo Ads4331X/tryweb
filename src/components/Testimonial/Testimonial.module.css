@@ -8,9 +8,9 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 8rem;
-  padding-bottom: 6rem;
-  padding-top: 4rem;
+  /* margin-top: 8rem; */
+  /* padding-bottom: 6rem; */
+  padding: 4rem;
 }
 
 .img {

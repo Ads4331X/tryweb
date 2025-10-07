@@ -1,7 +1,3 @@
-.Container {
-  --translateX: -10px;
-}
-
 .Slide {
   background-color: #ecf4ff;
   width: fit-content;

@@ -2,7 +2,7 @@ import InstructorCarosel from "./instructorcarosel/InstructorCarosel";
 
 function Instructor() {
   return (
-    <div className="pt-5 mt-5 py-5 mb-5">
+    <div className="pt-3 mt-3 py-3 mb-5">
       <span className="d-flex justify-content-center mb-2">
         <h6 className="fw-normal fs-5 ">INSTRUCTORS</h6>
       </span>
