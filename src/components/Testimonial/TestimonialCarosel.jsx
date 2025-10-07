@@ -11,7 +11,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 
 function TestimonialCarosel() {
   return (
-    <Container className="p-0 ps-4 position-relative bg-white mt-0 ">
+    <Container  className="p-0 ps-lg-4 position-relative bg-white mt-0">
       <div className={css.ButtonContainer}>
         <div className="d-flex justify-content-center align-items-center ">
           <div
@@ -40,7 +40,8 @@ function TestimonialCarosel() {
       >
         {StudentsTestimonial.map((student) => (
           <SwiperSlide key={student.id}>
-            <div className="m-3 p-1">
+            <div className="m-3 m-lg-3 p-1">
+              {" "}
               <div className={`fs-1 text-primary mb-4 ${css.Icon}`}>
                 <FaQuoteLeft />
               </div>

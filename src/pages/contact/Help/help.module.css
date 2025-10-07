@@ -7,6 +7,11 @@
   padding: 4rem 2rem;
 }
 
+.location , .call , .email {
+  width: 77px;
+  height: 77px;
+}
+
 .input {
   border-radius: 0px !important;
   border-top: none;

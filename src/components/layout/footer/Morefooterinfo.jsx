@@ -46,7 +46,7 @@ function Morefooterinfo() {
       </Col>
       <Col md={4} lg={4}>
         <h3 className="mb-4">Our Courses</h3>
-        <div className="d-flex flex-column gap-2">
+        <div className="d-flex flex-column gap-2 mb-4">
           {["Web Design", "Apps Design", "Marketing", "Research", "SEO"].map(
             (text, i) => (
               <Link
@@ -64,7 +64,7 @@ function Morefooterinfo() {
       </Col>
       <Col md={4} lg={4}>
         <h3 className="mb-4">Quick Links</h3>
-        <div className="d-flex flex-column gap-2">
+        <div className="d-flex flex-column gap-2 mb-4">
           {[
             "Privacy Policy",
             "Terms & Conditions",

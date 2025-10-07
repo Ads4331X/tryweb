@@ -14,7 +14,9 @@ function Help() {
             <Col xs={12} sm={12} md={12} lg={12}>
               {" "}
               <div className="d-flex gap-4">
-                <div className="bg-primary text-light d-flex justify-content-center align-items-center p-4 fs-3">
+                <div
+                  className={`bg-primary text-light d-flex justify-content-center align-items-center p-4 fs-3 ${css.location}`}
+                >
                   <FaLocationDot />{" "}
                 </div>
                 <div>
@@ -27,7 +29,9 @@ function Help() {
             </Col>
             <Col xs={12} sm={12} md={12} lg={12}>
               <div className="d-flex gap-4">
-                <div className="bg-danger text-light d-flex justify-content-center align-items-center p-4 fs-3">
+                <div
+                  className={`bg-danger text-light d-flex justify-content-center align-items-center p-4 fs-3 ${css.call}`}
+                >
                   <IoCall />{" "}
                 </div>
                 <div>
@@ -38,7 +42,9 @@ function Help() {
             </Col>
             <Col xs={12} sm={12} md={12} lg={12}>
               <div className="d-flex gap-4">
-                <div className="bg-warning text-light d-flex justify-content-center align-items-center p-4 fs-3">
+                <div
+                  className={`bg-warning text-light d-flex justify-content-center align-items-center p-4 fs-3 ${css.email}`}
+                >
                   <IoMdMail />{" "}
                 </div>
                 <div>
@@ -50,8 +56,7 @@ function Help() {
           </Row>
         </Col>
         <Col xs={12} sm={12} md={12} lg={7}>
-        <HelpForm/>
-        
+          <HelpForm />
         </Col>
       </Row>
     </Container>
