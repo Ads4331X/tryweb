@@ -46,3 +46,42 @@ small {
   transform: scale(1.2);
 }
 
+.ButtonContainer {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev {
+  margin-left: -1.25rem;
+}
+
+.next {
+  margin-right: -1.25rem;
+}
+
+.prev,
+.next {
+  width: 60px;
+  height: 60px;
+  background: #2878eb;
+  transition: all 0.5s ease-in-out;
+}
+
+.prev:hover,
+.next:hover {
+  background: #f14d5d !important;
+}
+
+@media screen and (max-width: 500px) {
+  .prev,
+  .next {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -6,13 +6,20 @@ import { GiGraduateCap } from "react-icons/gi";
 import { FaCertificate } from "react-icons/fa";
 import { FaBookOpenReader } from "react-icons/fa6";
 
-function Whychooseus() {
+function Whychooseus({ page }) {
   return (
-    <Container>
+    <Container className="mt-5  whychooseus">
       <div>
         <Row>
-          <Col xs={12} sm={12} md={12} lg={7}>
-            <div className="whychooseus-content">
+          {" "}
+          <Col
+            xs={12}
+            sm={12}
+            md={12}
+            lg={7}
+            className={page === "features" ? "pt-3" : "pt-0"}
+          >
+            <div className="whychooseus-content ">
               <h6>Why Choose Us?</h6>
 
               <h1 className="display-5 fw-bold mb-4  p-0 why-info">
@@ -28,7 +35,7 @@ function Whychooseus() {
             </div>
 
             <Row className="icon-container">
-              <Col xs={2} sm={2} md={2} lg={2} >
+              <Col xs={2} sm={2} md={2} lg={2}>
                 <GiGraduateCap className="bg-primary graduate" />
               </Col>
               <Col xs={9} sm={9} md={9} lg={10}>
@@ -71,9 +78,8 @@ function Whychooseus() {
               </Col>
             </Row>
           </Col>
-
           <Col xs={12} sm={12} md={12} lg={5}>
-            <div className="whychooseus-image">
+            <div className={`whychooseus-image   `}>
               <img
                 src="	https://themewagon.github.io/Edukate/img/feature.jpg"
                 className="img-fluid"

@@ -1,26 +1,25 @@
-import Content from "../../content/content";
 import Header from "../layout/header/header";
-import Testimonial from "../Testimonial/Testimonial";
+import Content from "../../content/content";
+import Whychooseus from "../../pages/about/whychooseus";
 import Footer from "../layout/footer/Footer";
 
-function TestimonialPage() {
+function OurFeatures() {
   return (
     <>
-      
-      <Header currentPage="Testimonial" />
+      <Header />
       <Content
-        Title="Testimonial"
+        Title="Features"
         TitleTag="h1"
-        Subtitle="TESTIMONIAL"
+        Subtitle="FEATURES"
+        SubtitleTag="p"
         breadcrumbPath="/home"
         breadcrumbLabel="HOME"
-        SubtitleTag="p"
         BgImg="https://themewagon.github.io/Edukate/img/page-header.jpg"
       />
-      <Testimonial />
+      <Whychooseus page="features" />
       <Footer />
     </>
   );
 }
 
-export default TestimonialPage;
+export default OurFeatures;

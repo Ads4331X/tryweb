@@ -60,7 +60,7 @@ const CourseCarousel = () => {
                 <div className="d-flex justify-content-between  p-3">
                   <h4 className="fs-6">
                     <FaUser /> &nbsp;
-                    {course.teachername}
+                    {course.Instructor}
                   </h4>
                   <div>
                     <span className="fs-6">

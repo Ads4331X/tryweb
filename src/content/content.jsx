@@ -1,12 +1,11 @@
 import "./content.css";
 import Searchsection from "./Searchsection.jsx";
+import { Link } from "react-router-dom";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 function Content(props) {
-  const TitleTag = props.TitleTag;
-  const Title = props.Title;
-  const Subtitle = props.Subtitle;
-  const SubtitleTag = props.SubtitleTag;
-  const BgImg = props.BgImg;
+  const { TitleTag, Title, Subtitle, SubtitleTag, BgImg, breadcrumbPath, breadcrumbLabel } = props;
+
   return (
     <div>
       <div
@@ -15,25 +14,29 @@ function Content(props) {
           backgroundImage: `linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(${BgImg})`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center top",
-          backgroundSize: "cover  ",
+          backgroundSize: "cover",
         }}
       >
         <div className="text-center content p-5 mb-4 text-light">
-          <TitleTag
-            className={` ${TitleTag !== "p" ? "display-1" : " fs-2"} fw-bold `}
-          >
+          <TitleTag className={`${TitleTag !== "p" ? "display-1" : "fs-2"} fw-bold`}>
             {Title}
           </TitleTag>
-          <SubtitleTag
-            className={` ${
-              SubtitleTag !== "p"
-                ? "display-1 fw-bold"
-                : "fw-normal  subtitle-p"
-            } `}
-          >
-            {Subtitle}
+
+          <SubtitleTag className={`${SubtitleTag !== "p" ? "display-1 fw-bold" : "fw-normal subtitle-p"}`}>
+            {breadcrumbPath && breadcrumbLabel ? (
+              <>
+                <Link to={breadcrumbPath} className="text-light text-decoration-none fw-normal subtitle-link">
+                  {breadcrumbLabel}
+                </Link>
+                <MdKeyboardDoubleArrowRight className="mx-2" />
+                {Subtitle}
+              </>
+            ) : (
+              Subtitle
+            )}
           </SubtitleTag>
         </div>
+
         <Searchsection />
       </div>
     </div>

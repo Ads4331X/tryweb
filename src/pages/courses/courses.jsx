@@ -3,8 +3,6 @@ import Content from "../../content/content";
 import GotoTop from "../../components/subcontent/gototop";
 import Footer from "../../components/layout/footer/Footer";
 import Ourcourses from "./ourcourses";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 function Courses() {
   return (
@@ -13,18 +11,9 @@ function Courses() {
       <Content
         Title="Courses"
         TitleTag="h1"
-        Subtitle={
-          <>
-            <Link
-              to="/home"
-              className="text-light text-decoration-none fw-normal subtitle-link"
-            >
-              HOME
-            </Link>
-            <MdKeyboardDoubleArrowRight className="mx-2" />
-            COURSES
-          </>
-        }
+        Subtitle="COURSES"
+        breadcrumbPath="/home"
+        breadcrumbLabel="HOME"
         SubtitleTag="p"
         BgImg="https://themewagon.github.io/Edukate/img/page-header.jpg"
       />

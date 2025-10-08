@@ -49,7 +49,7 @@ function AboutUs() {
       </div>
       <div className="whychooseus-container">
         {" "}
-        <Whychooseus />
+        <Whychooseus page="home" />
       </div>
     </div>
   );
