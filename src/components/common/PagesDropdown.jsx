@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function PagesDropdown(props) {
+  const location = useLocation();
   const dropdown_info = [
     { name: "Course Detail", path: "/course-detail" },
     { name: "Our Features", path: "/features" },
@@ -31,7 +32,13 @@ function PagesDropdown(props) {
         aria-labelledby="dropdownMenuLink"
       >
         {dropdown_info.map((info, key) => (
-          <Link to={info.path} className="dropdown-item" key={key}>
+          <Link
+            to={info.path}
+            className={`dropdown-item ${
+              location.pathname === info.path ? "bg-primary text-light" : ""
+            }`}
+            key={key}
+          >
             {info.name}
           </Link>
         ))}

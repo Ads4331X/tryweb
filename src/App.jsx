@@ -2,6 +2,7 @@ import Home from "./pages/home/home";
 import Courses from "./pages/courses/courses";
 import About from "./pages/about/about";
 import Contact from "./pages/contact/contact";
+import TestimonialPage from "./components/Testimonial/TestimonialPage.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "swiper/css";
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/courses" element={<Courses />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/testimonials" element={<TestimonialPage />}></Route>
       </Routes>
     </BrowserRouter>
   );
