@@ -4,6 +4,8 @@ import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
 import css from "./footer.module.css";
 import { Link } from "react-router-dom";
+import { RiArrowRightSLine } from "react-icons/ri";
+
 import {
   FaTwitter,
   FaFacebookF,
@@ -55,7 +57,9 @@ function Morefooterinfo() {
                 className={`${css.p} text-decoration-none  d-inline-flex align-items-center fs-5`}
                 style={{ width: "fit-content" }}
               >
-                <span className={css.arrow}>{">"}</span>
+                <span className={css.arrow}>
+                  <RiArrowRightSLine />
+                </span>
                 <span className={css.link}>{text}</span>
               </Link>
             )
@@ -78,7 +82,9 @@ function Morefooterinfo() {
               className={`${css.p} text-decoration-none d-inline-flex align-items-center fs-5`}
               style={{ width: "fit-content" }}
             >
-              <span className={css.arrow}>{">"}</span>
+              <span className={css.arrow}>
+                <RiArrowRightSLine />
+              </span>
               <span className={css.link}>{text}</span>
             </Link>
           ))}

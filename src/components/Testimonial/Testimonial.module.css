@@ -45,10 +45,10 @@
   transition: all 0.5s ease-in-out;
 }
 
-.prev svg,
+/* .prev svg,
 .next svg {
   display: none;
-}
+} */
 
 .prev {
   background-color: #f14d5d;

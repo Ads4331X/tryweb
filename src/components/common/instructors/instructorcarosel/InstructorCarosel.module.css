@@ -42,11 +42,6 @@
   transition: all 0.5s ease-in-out;
 }
 
-.prev svg,
-.next svg {
-  display: none;
-}
-
 .prev:hover,
 .next:hover {
   background: #f14d5d !important;

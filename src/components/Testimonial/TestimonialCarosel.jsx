@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -8,21 +8,23 @@ import css from "./Testimonial.module.css";
 
 import { StudentsTestimonial } from "./StudentsTestimonial.jsx";
 import { FaQuoteLeft } from "react-icons/fa";
+import { RiArrowRightSLine } from "react-icons/ri";
+import { RiArrowLeftSLine } from "react-icons/ri";
 
 function TestimonialCarosel() {
   return (
-    <Container  className="p-0 ps-lg-4 position-relative bg-white mt-0">
+    <Container className="p-0 ps-lg-4 position-relative bg-white mt-0">
       <div className={css.ButtonContainer}>
         <div className="d-flex justify-content-center align-items-center ">
           <div
             className={`testimonial-button-prev ${css.prev} text-light fw-bold fs-4`}
           >
-            {"<"}
+            <RiArrowLeftSLine />
           </div>
           <div
             className={`testimonial-button-next ${css.next} text-white fw-bold fs-4`}
           >
-            {">"}
+            <RiArrowRightSLine />
           </div>
         </div>
       </div>

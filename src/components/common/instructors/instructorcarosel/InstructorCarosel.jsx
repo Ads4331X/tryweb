@@ -7,6 +7,10 @@ import "swiper/css/navigation";
 import InstructorData from "../InstructorsData";
 import { Container } from "react-bootstrap";
 import css from "./InstructorCarosel.module.css";
+
+import { RiArrowRightSLine } from "react-icons/ri";
+import { RiArrowLeftSLine } from "react-icons/ri";
+
 import {
   FaTwitter,
   FaYoutube,
@@ -106,12 +110,12 @@ function InstructorCarosel() {
         <div
           className={`swiper-button-prev ${css.prev}  text-light fw-bold fs-4`}
         >
-          {"<"}
+          <RiArrowLeftSLine />
         </div>
         <div
           className={`swiper-button-next ${css.next} text-white fw-bold fs-4`}
         >
-          {">"}
+          <RiArrowRightSLine />
         </div>
       </div>
     </Container>
