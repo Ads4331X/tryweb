@@ -1,0 +1,48 @@
+.ScalerContainer {
+  overflow: hidden;
+}
+
+.Scaler {
+  min-height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.ImgContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ImgContainer img {
+  will-change: transform;
+  transition: transform 0.5s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#120f2d00, rgb(18, 15, 45));
+}
+
+.courseCard {
+  height: 100%;
+  position: relative;
+  margin-top: -11rem;
+}
+
+small {
+  font-size: 12px;
+}
+
+.Scaler:hover img {
+  transform: scale(1.2);
+}
+

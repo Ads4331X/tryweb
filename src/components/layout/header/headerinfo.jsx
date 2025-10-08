@@ -16,7 +16,7 @@ function Headerinfo(props) {
   const contact = { name: "Contact", path: "/contact" };
 
   if (props.dropend) {
-    items = [home, courses, about, pages, contact];
+    items = [home, about, courses, pages, contact];
   } else {
     items = [home, about, courses, pages, contact];
   }

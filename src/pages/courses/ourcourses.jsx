@@ -1,5 +1,7 @@
 import CourseCarousel from "./CourseCarousel/index.jsx";
-function Ourcourses() {
+import CourseScaler from "./CourseScaler/index.jsx";
+
+function Ourcourses(props) {
   return (
     <div>
       <div className=" d-flex justify-content-center align-items-center w-100">
@@ -10,7 +12,9 @@ function Ourcourses() {
           </h1>
         </div>
       </div>
-      <CourseCarousel />
+
+      {!props.pagination && <CourseCarousel />}
+      {props.pagination && <CourseScaler />}
     </div>
   );
 }
