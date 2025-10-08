@@ -14,7 +14,6 @@ import { RiArrowLeftSLine } from "react-icons/ri";
 function RelatedCourses() {
   return (
     <Container className="position-relative">
-      <Row className="g-3">
         <div className={css.ButtonContainer}>
           <div
             className={`swiper-button-prev ${css.prev}  text-light fw-bold fs-4`}
@@ -79,7 +78,6 @@ function RelatedCourses() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </Row>
     </Container>
   );
 }

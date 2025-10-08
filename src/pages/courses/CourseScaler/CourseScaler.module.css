@@ -50,19 +50,12 @@ small {
   position: absolute;
   top: 50%;
   right: 0;
-  left: 0%;
+  left: -10px;
+  right: -10px;
   z-index: 10;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-.prev {
-  margin-left: -1.25rem;
-}
-
-.next {
-  margin-right: -1.25rem;
 }
 
 .prev,
@@ -78,10 +71,28 @@ small {
   background: #f14d5d !important;
 }
 
+@media screen and (max-width: 768px) {
+  .courseCard {
+    margin-top: -9rem;
+  }
+  .Scaler {
+    min-height: 180px;
+  }
+  .courseCard h3 {
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .prev,
   .next {
     width: 50px;
     height: 50px;
+  }
+  .courseCard {
+    margin-top: -7rem;
+  }
+  .Scaler {
+    min-height: 150px;
   }
 }
