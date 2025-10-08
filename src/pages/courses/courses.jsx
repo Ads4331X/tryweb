@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Courses() {
   return (
     <>
-      <Header currentPage="Courses" />;
+      <Header currentPage="Courses" />
       <Content
         Title="Courses"
         TitleTag="h1"
