@@ -23,17 +23,39 @@ function CourseFeatures() {
       <div className="w-100 mt-3">
         <h3 className="py-3 px-4">Course Features</h3>
         <div>
-          {Object.entries(datatoshow).map(([key, value], index, arr) => (
-            <div
-              key={key}
-              className={`px-4 my-3 pb-3  d-flex justify-content-between align-items-center ${
-                index !== arr.length - 1 ? "border-bottom" : ""
-              }`}
-            >
-              <h6 className="text-white text-decoration-none fs-5">{key}:</h6>
-              <h6 className="text-white text-decoration-none fs-5">{value}</h6>
-            </div>
-          ))}
+          {Object.entries(datatoshow).map(([key, value], index, arr) => {
+            if (key !== "Course Price") {
+              return (
+                <div
+                  key={key}
+                  className={`px-4 my-3 pb-1 d-flex justify-content-between align-items-center ${
+                    index !== arr.length - 1 ? "border-bottom" : ""
+                  }`}
+                >
+                  <h6 className="text-white text-decoration-none fs-6">
+                    {key}:
+                  </h6>
+                  <h6 className="text-white text-decoration-none fs-6">
+                    {value}
+                  </h6>
+                </div>
+              );
+            }
+            return (
+              <div
+                key={key}
+                className={`px-4 my-3 pb-1 d-flex justify-content-start align-items-center  `}
+              >
+                {" "}
+                <h6 className="fw-bold text-decoration-none fs-5 text-white">
+                  {key}
+                </h6>
+                <h6 className="fw-bold text-decoration-none fs-5 text-white">
+                  {value}
+                </h6>
+              </div>
+            );
+          })}
 
           <div className="d-flex justify-content-center align-items-center w-100 px-4 pb-3 mb-2">
             <Button variant="danger" className="w-100 p-3 fs-5 fw-bold">

@@ -4,12 +4,15 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
 import { FaUser } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 import { Button, Container } from "react-bootstrap";
 
 import css from "./CourseCarousel.module.css";
 
 const CourseCarousel = () => {
+  let navigate = useNavigate();
+
   return (
     <Container>
       <Swiper
@@ -25,21 +28,13 @@ const CourseCarousel = () => {
           clickable: true,
         }}
         breakpoints={{
-          640: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-          1200: {
-            slidesPerView: 4,
-          },
-          1400: {
-            slidesPerView: 5,
-          },
+          574: { slidesPerView: 1 },
+          620: { slidesPerView: 2 },
+          768: { slidesPerView: 2 },
+          992: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 },
+          1200: { slidesPerView: 4 },
+          1400: { slidesPerView: 5 },
         }}
       >
         {courseDataWithIds.map((course) => (
@@ -77,7 +72,13 @@ const CourseCarousel = () => {
             <div
               className={`p-4 d-flex align-items-center justify-content-center bg-white ${css.actionButton}`}
             >
-              <Button variant="primary" className="border-0">
+              <Button
+                variant="primary"
+                className="border-0"
+                onClick={() => {
+                  navigate(`/courses/${course.id}`);
+                }}
+              >
                 Course Details
               </Button>
             </div>

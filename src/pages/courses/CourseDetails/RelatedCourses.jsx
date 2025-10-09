@@ -8,10 +8,12 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import { useNavigate } from "react-router-dom";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { RiArrowLeftSLine } from "react-icons/ri";
 
 function RelatedCourses() {
+  let navigate = useNavigate();
   return (
     <Container className="position-relative  mb-5">
       <div className={css.ButtonContainer}>
@@ -34,7 +36,7 @@ function RelatedCourses() {
         }}
         loop={true}
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={-20}
         breakpoints={{
           768: {
             slidesPerView: 2,
@@ -43,38 +45,47 @@ function RelatedCourses() {
       >
         {courseDataWithIds.map((course) => (
           <SwiperSlide
-            className={` text-light ${css.ScalerContainer}} `}
+            className={` text-light ${css.ScalerContainer} d-flex justify-content-center align-items-center `}
             key={course.id}
           >
-            <div className={css.Scaler}>
-              <div className={css.ImgContainer}>
-                <img
-                  src={course.bgImg}
-                  alt={course.title}
-                  className="w-100 h-100 img-fluid"
-                />
-              </div>
-              <div className={css.overlay} />
-              <div className={css.courseCard}>
-                <h3 className="p-3 fs-4 text-center">{course.coursename}</h3>
-                <div className="border-bottom" />
-                <div className="d-flex justify-content-between  p-3">
-                  <h4 className="fs-6">
-                    <FaUser /> &nbsp;
-                    {course.Instructor}
-                  </h4>
-                  <div>
-                    <span className="fs-6">
-                      <FaStar /> &nbsp;
-                      {course.rating}&nbsp;
-                      <small className="fw-normal">
-                        ({course.ratednumber})
-                      </small>
-                    </span>
+            <Col
+              xs={10}
+              sm={10}
+              md={10}
+              lg={10}
+              xl={10}
+              onClick={() => navigate(`/courses/${course.id}`)}
+            >
+              <div className={css.Scaler}>
+                <div className={css.ImgContainer}>
+                  <img
+                    src={course.bgImg}
+                    alt={course.title}
+                    className="w-100 h-100 img-fluid"
+                  />
+                </div>
+                <div className={css.overlay} />
+                <div className={css.courseCard}>
+                  <h3 className="p-3 fs-4 text-center">{course.coursename}</h3>
+                  <div className="border-bottom" />
+                  <div className="d-flex justify-content-between  p-3">
+                    <h4 className="fs-6">
+                      <FaUser /> &nbsp;
+                      {course.Instructor}
+                    </h4>
+                    <div>
+                      <span className="fs-6">
+                        <FaStar /> &nbsp;
+                        {course.rating}&nbsp;
+                        <small className="fw-normal">
+                          ({course.ratednumber})
+                        </small>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Col>
           </SwiperSlide>
         ))}
       </Swiper>

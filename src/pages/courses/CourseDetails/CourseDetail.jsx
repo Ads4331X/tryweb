@@ -2,10 +2,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import RelatedCourses from "./RelatedCourses";
 import CourseFeatures from "./CourseFeatures";
 import CourseCategories from "./CourseCategories";
+import RecentCourses from "./RecentCourses";
 
 function CourseDetail() {
   return (
-    <Container>
+    <Container className="mt-5 pt-5 mb-5 pb-5">
       <Row>
         <Col xs={12} sm={12} md={12} lg={8}>
           <div className="mb-5">
@@ -47,6 +48,7 @@ function CourseDetail() {
         <Col xs={12} sm={12} md={12} lg={4}>
           <CourseFeatures />
           <CourseCategories />
+          <RecentCourses />
         </Col>
       </Row>
     </Container>

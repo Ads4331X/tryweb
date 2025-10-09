@@ -1,0 +1,28 @@
+.category {
+  cursor: pointer;
+}
+
+.category:hover {
+  color: #1154b6;
+}
+
+.fixedImg {
+  width: 80px;
+  height: fit-content;
+  object-fit: cover;
+}
+
+.imgCol , .padding{
+  cursor: pointer;
+}
+
+.imgCol {
+  height: 100%;
+  width: min-content;
+  display: flex;
+  align-items: center;
+}
+
+.padding {
+  padding-left: 0.25rem;
+}

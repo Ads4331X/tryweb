@@ -7,8 +7,10 @@ import { useState } from "react";
 import Pagination from "@mui/material/Pagination";
 import PaginationItem from "@mui/material/PaginationItem";
 import { RiArrowLeftDoubleFill, RiArrowRightDoubleFill } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 
 function CourseScaler() {
+  let navigate = useNavigate();
   const [page, setpage] = useState(1);
   const itemsperpage = 6;
   const totalpage = Math.ceil(courseDataWithIds.length / itemsperpage);
@@ -32,6 +34,9 @@ function CourseScaler() {
             lg={4}
             key={course.id}
             className={`${css.ScalerContainer} text-light`}
+            onClick={() => {
+              navigate(`/courses/${course.id}`);
+            }}
           >
             <div className={css.Scaler}>
               <div className={css.ImgContainer}>

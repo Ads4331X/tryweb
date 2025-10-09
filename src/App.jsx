@@ -22,6 +22,7 @@ function App() {
         <Route path="features" element={<OurFeatures />}></Route>
         <Route path="*" element={<Home />}></Route>
         <Route path="/course-detail" element={<CourseDetailPage />}></Route>
+        <Route path="/courses/:id" element={<CourseDetailPage />}></Route>
       </Routes>
     </BrowserRouter>
   );
