@@ -2,7 +2,7 @@ import { Row, Col, Container, Button } from "react-bootstrap";
 
 function Searchsection() {
   return (
-    <Container className="ps-5 search-section">
+    <Container className="ps-0 pe-0 pb-5 mb-5 w-75 search-section">
       <Row className="p-0 m-0">
         <Col
           xs={3}

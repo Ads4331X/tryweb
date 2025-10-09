@@ -8,7 +8,7 @@
   height: auto;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 5rem;
+  padding: 8rem;
   position: relative;
   margin-bottom: 4rem;
   /* background-blend-mode: multiply; */
@@ -44,8 +44,6 @@ Button {
   padding: 14.6px;
   background-color: white;
 }
-
-
 
 .dropdown-menu.course-menu {
   margin-left: -15px !important;
