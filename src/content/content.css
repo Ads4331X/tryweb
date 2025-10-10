@@ -4,7 +4,7 @@
 
 .main-content {
   width: 100%;
-
+  box-sizing: border-box;
   height: auto;
   background-size: 100% 100%;
   background-repeat: no-repeat;
