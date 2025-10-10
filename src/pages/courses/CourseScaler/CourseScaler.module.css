@@ -41,16 +41,15 @@
 
 .courseTitle {
   padding: 0 15px;
-
   font-size: 1.25rem;
-  line-height: 1.4;
 
+  line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  overflow: hidden;
   text-overflow: ellipsis;
 
+  overflow: hidden;
   height: 5.25rem;
 }
 
