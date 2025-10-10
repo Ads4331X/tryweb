@@ -48,9 +48,14 @@ function CourseScaler() {
               </div>
               <div className={css.overlay} />
               <div className={css.courseCard}>
-                <h3 className="p-3 fs-4 text-center">{course.coursename}</h3>
+                <h3
+                  // 💡 FIX: Added custom CSS class for height control and overriding Bootstrap
+                  className={`p-3 fs-4 text-center ${css.courseTitleGrid}`}
+                >
+                  {course.coursename}
+                </h3>
                 <div className="border-bottom" />
-                <div className="d-flex justify-content-between  p-3">
+                <div className="d-flex justify-content-between  p-3 m-3">
                   <h4 className="fs-6">
                     <FaUser /> &nbsp;
                     {course.Instructor}

@@ -10,6 +10,7 @@
   justify-content: flex-end;
   cursor: pointer;
 
+  /* Performance fix */
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
 }
@@ -32,6 +33,7 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(#120f2d00, rgb(18, 15, 45));
+  /* Performance fix */
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
   z-index: 2;
@@ -40,22 +42,39 @@
 .courseCard {
   height: 100%;
   position: relative;
-  margin-top: -10rem;
+  /* 💡 INCREASED HEIGHT: Changed from -10rem to -9rem */
+  margin-top: -9rem;
   z-index: 3;
+
+  /* Performance fix */
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
 }
 
-.courseTitle {
-  padding: 0 15px;
-  font-size: 1.25rem;
+/* --- Course Title Styles --- */
 
+/* This class is for the Grid/Pagination component and maintains fixed height */
+.courseTitleGrid {
+  font-size: 1.25rem !important;
   line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 1rem 1rem !important;
+  height: 7.25rem !important;
+}
 
+/* This class is for the Slider component */
+.courseTitle {
+  padding: 0 15px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
   overflow: hidden;
   height: 5.25rem;
 }
@@ -94,7 +113,10 @@ small {
 
 @media screen and (max-width: 768px) {
   .courseCard {
-    margin-top: -8rem;
+    /* 💡 INCREASED HEIGHT: Changed from -8rem to -7rem */
+    margin-top: -7rem;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
   }
   .Scaler {
     min-height: 180px;
@@ -108,7 +130,10 @@ small {
     height: 50px;
   }
   .courseCard {
-    margin-top: -6rem;
+    /* 💡 INCREASED HEIGHT: Changed from -6rem to -5rem */
+    margin-top: -5rem;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
   }
   .Scaler {
     min-height: 150px;
