@@ -15,7 +15,7 @@ import { RiArrowLeftSLine } from "react-icons/ri";
 function RelatedCourses() {
   let navigate = useNavigate();
   return (
-    <Container className="position-relative  mb-5">
+    <Container className="position-relative mb-5">
       <div className={css.ButtonContainer}>
         <div
           className={`swiper-button-prev ${css.prev}  text-light fw-bold fs-4`}
@@ -66,9 +66,14 @@ function RelatedCourses() {
                 </div>
                 <div className={css.overlay} />
                 <div className={css.courseCard}>
-                  <h3 className="p-3 fs-4 text-center">{course.coursename}</h3>
+                  <h3
+                    // 💡 Key Change: Removed 'fs-4' and corrected the class name template
+                    className={`pb-3 pt-3 text-center ${css.courseTitle}`}
+                  >
+                    {course.coursename}
+                  </h3>
                   <div className="border-bottom" />
-                  <div className="d-flex justify-content-between  p-3">
+                  <div className="d-flex justify-content-between p-3">
                     <h4 className="fs-6">
                       <FaUser /> &nbsp;
                       {course.Instructor}

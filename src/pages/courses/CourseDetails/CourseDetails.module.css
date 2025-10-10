@@ -31,3 +31,38 @@
 .CourseFeatureCol {
   height: fit-content;
 }
+
+.margintop {
+  margin-top: -18rem !important;
+}
+.courseTitle {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 1.25rem; /* match your fs-4 */
+  line-height: 1.4; /* consistent spacing */
+  height: calc(1.25rem * 1.4 * 2); /* exactly 2 lines */
+  max-height: calc(1.25rem * 1.4 * 2);
+  min-height: calc(1.25rem * 1.4 * 2);
+}
+
+@media screen and (max-width: 1399.5px) {
+  .margintop {
+    margin-top: -16rem !important;
+  }
+}
+
+@media screen and (max-width: 1199.5px) {
+  .margintop {
+    margin-top: -14rem !important;
+  }
+}
+
+@media screen and (max-width: 991.5px) {
+  .margintop {
+    margin-top: 0 !important;
+  }
+}

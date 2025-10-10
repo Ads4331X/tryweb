@@ -36,7 +36,22 @@
 .courseCard {
   height: 100%;
   position: relative;
-  margin-top: -11rem;
+  margin-top: -10rem;
+}
+
+.courseTitle {
+  padding: 0 15px;
+
+  font-size: 1.25rem;
+  line-height: 1.4;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  height: 5.25rem;
 }
 
 small {
@@ -50,7 +65,6 @@ small {
 .ButtonContainer {
   position: absolute;
   top: 50%;
-  right: 0;
   left: 15px;
   right: 15px;
   z-index: 10;
@@ -74,13 +88,10 @@ small {
 
 @media screen and (max-width: 768px) {
   .courseCard {
-    margin-top: -9rem;
+    margin-top: -8rem;
   }
   .Scaler {
     min-height: 180px;
-  }
-  .courseCard h3 {
-    font-size: 1.2rem;
   }
 }
 
@@ -91,9 +102,15 @@ small {
     height: 50px;
   }
   .courseCard {
-    margin-top: -7rem;
+    margin-top: -6rem;
   }
   .Scaler {
     min-height: 150px;
+  }
+}
+
+@media screen and (max-width: 1199.5px) {
+  .ButtonContainer {
+    top: 45%;
   }
 }

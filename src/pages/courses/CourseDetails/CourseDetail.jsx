@@ -5,7 +5,6 @@ import CourseCategories from "./CourseCategories";
 import RecentCourses from "./RecentCourses";
 import css from "./CourseDetails.module.css";
 
-
 function CourseDetail() {
   return (
     <Container className="mt-5 pt-5 mb-5 pb-5">
@@ -55,7 +54,7 @@ function CourseDetail() {
             <RelatedCourses />
           </div>
         </Col>
-        <Col xs={12} sm={12} md={12} lg={4}>
+        <Col xs={12} sm={12} md={12} lg={4} className={css.margintop}>
           <CourseCategories />
           <RecentCourses />
         </Col>

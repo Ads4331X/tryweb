@@ -50,7 +50,7 @@ function CourseFeatures() {
               >
                 {" "}
                 <h6 className="fw-bold text-decoration-none fs-2 text-white">
-                  {key}
+                  {key}:
                 </h6>
                 <h6 className="fw-bold text-decoration-none fs-2 text-white">
                   {value}
