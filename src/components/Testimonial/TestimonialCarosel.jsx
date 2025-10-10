@@ -11,7 +11,26 @@ import { FaQuoteLeft } from "react-icons/fa";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { RiArrowLeftSLine } from "react-icons/ri";
 
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 function TestimonialCarosel() {
+  const [students, setStudents] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`http://localhost:5173/api/StudentsTestimonial.json`)
+      .then((res) => {
+        console.log(res.data);
+        const StudentsTestimonialIDs = res.data.map((student, index) => ({
+          id: `student-${index + 1}`,
+          ...student,
+        }));
+        setStudents(StudentsTestimonialIDs);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <Container className="p-0 ps-lg-4 position-relative bg-white mt-0">
       <div className={css.ButtonContainer}>
@@ -40,8 +59,8 @@ function TestimonialCarosel() {
         }}
         loop={true}
       >
-        {StudentsTestimonial.map((student) => (
-          <SwiperSlide key={student.id}>
+        {students.map((student) => (
+          <SwiperSlide key={students.id}>
             <div className="m-3 m-lg-3 p-1">
               {" "}
               <div className={`fs-1 text-primary mb-4 ${css.Icon}`}>
@@ -54,7 +73,11 @@ function TestimonialCarosel() {
               </div>
               <div className={`mt-4 d-flex gap-4 ${css.StudentInfo}`}>
                 <span>
-                  <img src={student.ProfilePic} className={` ${css.img}`} />
+                  <img
+                    src={student.ProfilePic}
+                    className={` ${css.img}`}
+                    alt={student.StdName}
+                  />
                 </span>
                 <div>
                   <h5>{student.StdName}</h5>

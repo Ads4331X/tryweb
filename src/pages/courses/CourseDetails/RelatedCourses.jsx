@@ -60,7 +60,7 @@ function RelatedCourses() {
                 <div className={css.ImgContainer}>
                   <img
                     src={course.bgImg}
-                    alt={course.title}
+                    alt={course.coursename}
                     className="w-100 h-100 img-fluid"
                   />
                 </div>

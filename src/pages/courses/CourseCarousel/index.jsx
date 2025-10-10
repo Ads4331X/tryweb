@@ -45,7 +45,7 @@ const CourseCarousel = () => {
             <div className={css.swiperSlide}>
               <img
                 src={course.bgImg}
-                alt={course.title}
+                alt={course.coursename}
                 className="w-100 img-fluid"
               />
               <div className={css.overlay} />

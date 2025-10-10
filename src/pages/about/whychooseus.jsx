@@ -81,8 +81,9 @@ function Whychooseus({ page }) {
           <Col xs={12} sm={12} md={12} lg={5}>
             <div className={`whychooseus-image   `}>
               <img
-                src="	https://themewagon.github.io/Edukate/img/feature.jpg"
+                src="https://themewagon.github.io/Edukate/img/feature.jpg"
                 className="img-fluid"
+                alt="Why Choose Us"
               />
             </div>
           </Col>

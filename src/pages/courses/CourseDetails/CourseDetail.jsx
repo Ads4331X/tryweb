@@ -17,8 +17,9 @@ function CourseDetail() {
             </h1>
 
             <img
-              src="	https://themewagon.github.io/Edukate/img/header.jpg"
+              src="https://themewagon.github.io/Edukate/img/header.jpg"
               className="img-fluid"
+              alt="Web design & development courses for beginners"
             />
 
             <p className="text-secondary mt-4 fw-normal">

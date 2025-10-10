@@ -16,6 +16,7 @@ function AboutUs() {
                 <img
                   src="https://themewagon.github.io/Edukate/img/about.jpg"
                   className="img-fluid h-100"
+                  alt="About Us"
                 />
               </div>
             </Col>

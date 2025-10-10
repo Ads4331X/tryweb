@@ -45,7 +45,7 @@ function InstructorCarosel() {
                 <img
                   src={instructor.Profile}
                   className={`img-fluid ${css.img}`}
-                  alt={`Instructor ${instructor.id}`}
+                  alt={instructor.Name}
                 />
               </div>
               <div className={`p-4 ${css.InfoContainer} text-center`}>

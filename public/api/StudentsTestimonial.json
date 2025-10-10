@@ -1,0 +1,38 @@
+[
+  {
+    "Information": "The Web Design course helped me build real-world projects and boosted my confidence. The instructors were incredibly supportive and knowledgeable.",
+    "ProfilePic": "https://randomuser.me/api/portraits/women/12.jpg",
+    "StdName": "Emily Johnson",
+    "StdCourse": "Web Design"
+  },
+  {
+    "Information": "I learned so much from the UI/UX Design course. The hands-on approach and real client projects were the best part of the experience!",
+    "ProfilePic": "https://randomuser.me/api/portraits/men/45.jpg",
+    "StdName": "Liam Smith",
+    "StdCourse": "UI/UX Design"
+  },
+  {
+    "Information": "The JavaScript Bootcamp was intense but so rewarding. The mentorship and code reviews really helped me grow as a developer.",
+    "ProfilePic": "https://randomuser.me/api/portraits/women/58.jpg",
+    "StdName": "Sofia Martinez",
+    "StdCourse": "JavaScript Bootcamp"
+  },
+  {
+    "Information": "Thanks to the Digital Marketing course, I landed my first internship. The course material was up-to-date and relevant to today’s industry needs.",
+    "ProfilePic": "https://randomuser.me/api/portraits/men/33.jpg",
+    "StdName": "Noah Williams",
+    "StdCourse": "Digital Marketing"
+  },
+  {
+    "Information": "The Python Programming course was well-structured and beginner-friendly. I particularly enjoyed the data analysis sections.",
+    "ProfilePic": "https://randomuser.me/api/portraits/women/27.jpg",
+    "StdName": "Olivia Brown",
+    "StdCourse": "Python Programming"
+  },
+  { 
+    "Information": "The Full Stack Development course gave me everything I needed to start freelancing. Highly recommend to anyone wanting a career in tech!",
+    "ProfilePic": "https://randomuser.me/api/portraits/men/60.jpg",
+    "StdName": "James Lee",
+    "StdCourse": "Full Stack Development"
+  }
+]
