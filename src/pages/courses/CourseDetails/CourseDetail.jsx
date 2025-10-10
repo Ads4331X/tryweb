@@ -3,11 +3,13 @@ import RelatedCourses from "./RelatedCourses";
 import CourseFeatures from "./CourseFeatures";
 import CourseCategories from "./CourseCategories";
 import RecentCourses from "./RecentCourses";
+import css from "./CourseDetails.module.css";
+
 
 function CourseDetail() {
   return (
     <Container className="mt-5 pt-5 mb-5 pb-5">
-      <Row>
+      <Row className={css.Row}>
         <Col xs={12} sm={12} md={12} lg={8}>
           <div className="mb-5">
             <h6 className="fs-5">Course Detail</h6>
@@ -40,13 +42,20 @@ function CourseDetail() {
               nonumy, gubergren sit stet no diam kasd vero.
             </p>
           </div>
+        </Col>
+        <Col xs={12} sm={12} md={12} lg={4} className={css.CourseFeatureCol}>
+          {" "}
+          <CourseFeatures />
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} sm={12} md={12} lg={8}>
           <div>
             <h2 className="mb-3 fw-bold">Related Courses</h2>
             <RelatedCourses />
           </div>
         </Col>
         <Col xs={12} sm={12} md={12} lg={4}>
-          <CourseFeatures />
           <CourseCategories />
           <RecentCourses />
         </Col>

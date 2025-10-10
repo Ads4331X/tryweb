@@ -8,8 +8,15 @@ import OurFeatures from "./components/OurFeatures/OurFeatures.jsx";
 import TestimonialPage from "./components/Testimonial/TestimonialPage.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "swiper/css";
+import { useEffect } from "react";
+import axios from "axios";
 
 function App() {
+  useEffect(() => {
+    axios.get(`http://localhost:5177/api/person.json`).then((res) => {
+      console.log(res.data);
+    });
+  }, []);
   return (
     <BrowserRouter>
       <Routes>

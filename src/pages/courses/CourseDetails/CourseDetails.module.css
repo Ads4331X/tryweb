@@ -12,7 +12,8 @@
   object-fit: cover;
 }
 
-.imgCol , .padding{
+.imgCol,
+.padding {
   cursor: pointer;
 }
 
@@ -25,4 +26,8 @@
 
 .padding {
   padding-left: 0.25rem;
+}
+
+.CourseFeatureCol {
+  height: fit-content;
 }
