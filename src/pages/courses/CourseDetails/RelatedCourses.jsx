@@ -66,10 +66,7 @@ function RelatedCourses() {
                 </div>
                 <div className={css.overlay} />
                 <div className={css.courseCard}>
-                  <h3
-                    // 💡 Key Change: Removed 'fs-4' and corrected the class name template
-                    className={`pb-3 pt-3 text-center ${css.courseTitle}`}
-                  >
+                  <h3 className={`pb-3 pt-3 text-center ${css.courseTitle}`}>
                     {course.coursename}
                   </h3>
                   <div className="border-bottom" />
