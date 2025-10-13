@@ -8,8 +8,8 @@ import css from "./CourseDetails.module.css";
 function CourseDetail() {
   return (
     <Container className="mt-5 pt-5 mb-5 pb-5">
-      <Row className={css.Row}>
-        <Col xs={12} sm={12} md={12} lg={8}>
+      <div className={css.Row}>
+        <div xs={12} sm={12} md={12} lg={8}>
           <div className="mb-5">
             <h6 className="fs-5">Course Detail</h6>
             <h1 className="display-4 fw-bold">
@@ -42,12 +42,12 @@ function CourseDetail() {
               nonumy, gubergren sit stet no diam kasd vero.
             </p>
           </div>
-        </Col>
-        <Col xs={12} sm={12} md={12} lg={4} className={css.CourseFeatureCol}>
+        </div>
+        <div xs={12} sm={12} md={12} lg={4} className={css.CourseFeatureCol}>
           {" "}
           <CourseFeatures />
-        </Col>
-      </Row>
+        </div>
+      </div>
       <Row>
         <Col xs={12} sm={12} md={12} lg={8}>
           <div>

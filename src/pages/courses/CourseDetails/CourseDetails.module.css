@@ -13,7 +13,6 @@
 }
 
 .courseRow {
-  height: 100px;
   align-items: center;
 }
 
@@ -40,7 +39,14 @@
   height: fit-content;
 }
 
-.margintop {
+.Row {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  grid-auto-flow: column;
+  gap: 20px;
+}
+
+/* .margintop {
   margin-top: -18rem !important;
 }
 
@@ -60,4 +66,4 @@
   .margintop {
     margin-top: 0 !important;
   }
-}
+} */
