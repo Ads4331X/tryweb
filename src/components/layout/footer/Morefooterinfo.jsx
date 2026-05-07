@@ -16,7 +16,7 @@ import {
 function Morefooterinfo() {
   return (
     <Row className="mb-5 pb-5">
-      <Col md={4} lg={4}>
+      <Col xs={12} md={4} lg={4}>
         <h3 className="mb-4">Get in Touch</h3>
         <p className={css.p}>
           <FaLocationDot /> 123 Street, New York, USA
@@ -28,25 +28,21 @@ function Morefooterinfo() {
           <IoMdMail /> info@example.com
         </p>
         <div className="d-flex gap-2 fs-2 mb-4">
-          <p>
-            {" "}
-            <FaTwitter />{" "}
-          </p>
-          <p>
-            {" "}
+          <a href="#" className={css.socialLink} aria-label="Twitter">
+            <FaTwitter />
+          </a>
+          <a href="#" className={css.socialLink} aria-label="Facebook">
             <FaFacebookF />
-          </p>
-          <p>
-            {" "}
-            <FaLinkedinIn />{" "}
-          </p>
-          <p>
-            {" "}
+          </a>
+          <a href="#" className={css.socialLink} aria-label="LinkedIn">
+            <FaLinkedinIn />
+          </a>
+          <a href="#" className={css.socialLink} aria-label="Instagram">
             <FaInstagram />
-          </p>
+          </a>
         </div>
       </Col>
-      <Col md={4} lg={4}>
+      <Col xs={12} md={4} lg={4}>
         <h3 className="mb-4">Our Courses</h3>
         <div className="d-flex flex-column gap-2 mb-4">
           {["Web Design", "Apps Design", "Marketing", "Research", "SEO"].map(
@@ -66,7 +62,7 @@ function Morefooterinfo() {
           )}
         </div>
       </Col>
-      <Col md={4} lg={4}>
+      <Col xs={12} md={4} lg={4}>
         <h3 className="mb-4">Quick Links</h3>
         <div className="d-flex flex-column gap-2 mb-4">
           {[

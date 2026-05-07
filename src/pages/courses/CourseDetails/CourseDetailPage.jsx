@@ -6,7 +6,7 @@ import Footer from "../../../components/layout/footer/Footer";
 function CourseDetailPage() {
   return (
     <>
-      <Header currentpage="Course Detail" />
+      <Header currentPage="Course Detail" />
       <GotoTop />
       <Content
         Title="Course Detail"

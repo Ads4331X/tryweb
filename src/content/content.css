@@ -1,17 +1,12 @@
-* {
-  font-weight: bold;
-}
-
 .main-content {
   width: 100%;
   box-sizing: border-box;
   height: auto;
-  background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 8rem;
+  padding: clamp(2rem, 8vw, 8rem);
   position: relative;
   margin-bottom: 4rem;
-  /* background-blend-mode: multiply; */
+  min-height: 420px;
 }
 
 .main-content::after {
@@ -27,7 +22,7 @@
 }
 
 .search-section {
-  padding-bottom: 6rem !important;
+  padding-bottom: 4.5rem !important;
 }
 
 Button {
@@ -43,6 +38,8 @@ Button {
   border: none !important;
   padding: 14.6px;
   background-color: white;
+  width: 100%;
+  text-align: center;
 }
 
 .dropdown-menu.course-menu {
@@ -54,6 +51,7 @@ Button {
 
 input {
   flex-grow: 1;
+  min-height: 48px;
 }
 
 .subtitle-p {
@@ -89,10 +87,11 @@ input {
 @media screen and (max-width: 380px) {
   .main-content {
     padding: 2rem;
+    min-height: 360px;
   }
 
   .search-section {
-    padding-bottom: 12rem !important;
+    padding-bottom: 2.5rem !important;
   }
 }
 
@@ -111,7 +110,7 @@ input {
   }
 
   .search-section {
-    padding-bottom: 12rem !important;
+    padding-bottom: 2.5rem !important;
     padding-top: 20px;
   }
 
@@ -122,6 +121,20 @@ input {
 }
 
 @media only screen and (max-width: 767.98px) {
+  .content {
+    padding: 1.2rem !important;
+  }
+
+  .display-1 {
+    font-size: clamp(1.9rem, 10vw, 3rem) !important;
+  }
+
+  .subtitle-p {
+    font-size: 0.95rem !important;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
   input {
     width: 100%;
     box-sizing: border-box;

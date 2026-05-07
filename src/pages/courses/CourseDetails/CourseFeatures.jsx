@@ -20,24 +20,24 @@ function CourseFeatures() {
   };
   return (
     <div
-      className={`bg-primary text-light mb-5 pb-2 d-flex justify-content-start align-items-center `}
+      className="bg-primary text-light mb-4 pb-2 d-flex justify-content-start align-items-center"
     >
       <div className="w-100 h-100 mt-4">
-        <h3 className="py-3 px-4 fs-1">Course Features</h3>
+        <h3 className="py-3 px-4 fs-2 fw-bold">Course Features</h3>
         <div>
           {Object.entries(datatoshow).map(([key, value], index, arr) => {
             if (key !== "Course Price") {
               return (
                 <div
                   key={key}
-                  className={`px-4 my-3 pb-1 d-flex justify-content-between align-items-center ${
+                  className={`px-4 my-3 pb-1 d-flex justify-content-between align-items-center flex-wrap gap-2 ${
                     index !== arr.length - 1 ? "border-bottom" : ""
                   }`}
                 >
-                  <h6 className="text-white text-decoration-none fs-5">
+                  <h6 className="text-white text-decoration-none fs-6 m-0">
                     {key}:
                   </h6>
-                  <h6 className="text-white text-decoration-none fs-5">
+                  <h6 className="text-white text-decoration-none fs-6 m-0">
                     {value}
                   </h6>
                 </div>
@@ -46,13 +46,12 @@ function CourseFeatures() {
             return (
               <div
                 key={key}
-                className={`px-4 my-3 pb-1 d-flex justify-content-start align-items-center mt-4 pt-2  `}
+                className="px-4 my-3 pb-1 d-flex justify-content-start align-items-center flex-wrap gap-2 mt-4 pt-2"
               >
-                {" "}
-                <h6 className="fw-bold text-decoration-none fs-2 text-white">
+                <h6 className="fw-bold text-decoration-none fs-4 text-white m-0">
                   {key}:
                 </h6>
-                <h6 className="fw-bold text-decoration-none fs-2 text-white">
+                <h6 className="fw-bold text-decoration-none fs-4 text-white m-0">
                   {value}
                 </h6>
               </div>

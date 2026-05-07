@@ -36,10 +36,11 @@ function RelatedCourses() {
         }}
         loop={true}
         slidesPerView={1}
-        spaceBetween={-20}
+        spaceBetween={16}
         breakpoints={{
           768: {
             slidesPerView: 2,
+            spaceBetween: 20,
           },
         }}
       >
@@ -49,9 +50,9 @@ function RelatedCourses() {
             key={course.id}
           >
             <Col
-              xs={10}
-              sm={10}
-              md={10}
+              xs={12}
+              sm={11}
+              md={11}
               lg={10}
               xl={10}
               onClick={() => navigate(`/courses/${course.id}`)}

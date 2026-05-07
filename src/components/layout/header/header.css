@@ -8,6 +8,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 72px;
+}
+
+.icon {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.header-toggle {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .link-text {
@@ -21,18 +39,36 @@
   margin-left: -40px !important;
 }
 
+.headerinfo {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+
+.headerinfo.show {
+  max-height: 320px;
+  opacity: 1;
+}
+
 @media only screen and (max-width: 767.98px) {
   .header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 12px;
+    min-height: 64px;
   }
   .joinus {
     display: none;
   }
   .hamburger {
-    font-size: 30px;
+    font-size: 24px;
     cursor: pointer;
+  }
+
+  .icon {
+    font-size: clamp(1.2rem, 4.8vw, 1.6rem);
   }
 
   .line {

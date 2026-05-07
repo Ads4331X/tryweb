@@ -18,28 +18,21 @@ function Footer() {
         {" "}
         <Container className="position-relative mt-5 pt-5 ">
           <Row className="mb-5">
-            <Col xs={12} sm={12} md={6} lg={6} className={`  mt-5 pt-5`}>
+            <Col xs={12} sm={12} md={6} lg={6} className="mt-4 pt-3 mt-md-5 pt-md-5">
               <div>
-                <h1>
-                  <Link
-                    to="/home"
-                    className={`text-light text-decoration-none  ${css.link}`}
-                  >
-                    <h1>
-                      {" "}
-                      <IoSchool /> EDUKATE
-                    </h1>
+                <h1 className="mb-3">
+                  <Link to="/home" className={`text-light text-decoration-none ${css.link}`}>
+                    <IoSchool /> EDUKATE
                   </Link>
-                  <p className={`m-0 fw-normal fs-6 ${css.p}`}>
-                    Accusam nonumy clita sed rebum kasd eirmod elitr. Ipsum ea
-                    lorem at et diam est, tempor rebum ipsum sit ea tempor stet
-                    et consetetur dolores. Justo stet diam ipsum lorem vero
-                    clita diam
-                  </p>
                 </h1>
+                <p className={`m-0 fw-normal fs-6 ${css.p}`}>
+                  Accusam nonumy clita sed rebum kasd eirmod elitr. Ipsum ea lorem at et diam
+                  est, tempor rebum ipsum sit ea tempor stet et consetetur dolores. Justo stet
+                  diam ipsum lorem vero clita diam
+                </p>
               </div>
             </Col>
-            <Col xs={12} sm={12} md={6} lg={6} className={`  mt-5 pt-5`}>
+            <Col xs={12} sm={12} md={6} lg={6} className="mt-4 pt-3 mt-md-5 pt-md-5">
               <NewsLetter />
             </Col>
           </Row>

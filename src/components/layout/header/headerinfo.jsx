@@ -36,6 +36,7 @@ function Headerinfo(props) {
             <Link
               to={item.path}
               className="link-text"
+              onClick={props.onItemClick}
               style={{
                 color: hovered === index ? "#1bceffff" : "black",
                 cursor: "pointer",

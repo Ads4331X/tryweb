@@ -4,8 +4,7 @@ import { Container } from "react-bootstrap";
 
 function Copyright() {
   return (
-    <Container className="d-flex justify-content-between align-items-center flex-wrap pt-4">
-      {" "}
+    <Container className="d-flex justify-content-between align-items-center flex-wrap gap-2 pt-4 pb-2">
       <div>
         <p className={css.p}>
           Copyright ©{" "}
@@ -17,8 +16,14 @@ function Copyright() {
       </div>
       <div>
         <p className={css.p}>
-          Designed by <a className="text-light text-decoration-none">Ads</a>{" "}
-          Distributed by <Link className="text-decoration-none">Ads</Link>
+          # Designed by{" "}
+          <a href="#" className="text-light text-decoration-none">
+            Ads
+          </a>{" "}
+          Distributed by{" "}
+          <a href="#" className="text-light text-decoration-none">
+            Ads
+          </a>
         </p>
       </div>
     </Container>

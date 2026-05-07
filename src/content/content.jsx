@@ -4,7 +4,15 @@ import { Link } from "react-router-dom";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 function Content(props) {
-  const { TitleTag, Title, Subtitle, SubtitleTag, BgImg, breadcrumbPath, breadcrumbLabel } = props;
+  const {
+    TitleTag,
+    Title,
+    Subtitle,
+    SubtitleTag,
+    BgImg,
+    breadcrumbPath,
+    breadcrumbLabel,
+  } = props;
 
   return (
     <div>
@@ -32,7 +40,7 @@ function Content(props) {
                 {Subtitle}
               </>
             ) : (
-              Subtitle
+              <>{Subtitle}</>
             )}
           </SubtitleTag>
         </div>

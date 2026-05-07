@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import courseDataWithIds from "../CourseData";
 import css from "./CourseDetails.module.css";
 import { useNavigate } from "react-router-dom";
@@ -13,7 +13,7 @@ function RecentCourses() {
   return (
     <div>
       <h2 className="fw-bold mb-4">Recent Courses</h2>
-      <Container>
+      <div>
         {courseDataWithIds.map((course, index) => (
           <Row key={index} className={`mb-3 ${css.courseRow}`}>
             <Col xs="auto" className={css.imgCol} onClick={() => goto(index)}>
@@ -47,7 +47,7 @@ function RecentCourses() {
             </Col>
           </Row>
         ))}
-      </Container>
+      </div>
     </div>
   );
 }
